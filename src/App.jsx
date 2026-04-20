@@ -18,7 +18,7 @@ function HashScroller() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Plateau-Landing-Page">
       <HashScroller />
       <Routes>
         <Route path="/" element={<LandingPage />} />
