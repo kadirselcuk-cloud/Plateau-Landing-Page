@@ -1,0 +1,26 @@
+/* Product sub-page styles */
+.p-hero { padding: 40px 0 clamp(60px, 8vw, 120px); border-bottom: 1px solid var(--line); }
+.p-back { color: var(--text-3); display: inline-block; margin-bottom: 50px; transition: color .2s; }
+.p-back:hover { color: var(--red); }
+.p-hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: clamp(40px, 6vw, 80px); align-items: center; }
+.p-hero-headline { font-size: clamp(20px, 2.1vw, 26px); color: var(--text); line-height: 1.3; font-weight: 500; letter-spacing: -0.015em; margin: 30px 0 0; max-width: 24ch; text-wrap: balance; }
+@media (max-width: 900px) { .p-hero-grid { grid-template-columns: 1fr; } }
+
+.p-features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); margin-top: 60px; }
+.p-feature { padding: 36px 28px 36px 0; padding-right: 28px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 12px; min-height: 220px; }
+.p-feature:last-child { border-right: 0; }
+.p-feature-num { color: var(--red); font-size: 11px; margin-bottom: 40px; }
+.p-feature-name { font-weight: 600; font-size: 20px; letter-spacing: -0.015em; }
+.p-feature-body { font-size: 14px; color: var(--text-2); line-height: 1.55; margin: 0; }
+@media (max-width: 900px) { .p-features { grid-template-columns: 1fr 1fr; } .p-feature:nth-child(2n) { border-right: 0; } .p-feature:nth-child(-n+2) { border-bottom: 1px solid var(--line); } }
+@media (max-width: 560px) { .p-features { grid-template-columns: 1fr; } .p-feature { border-right: 0; border-bottom: 1px solid var(--line); } }
+
+.p-cta { background: var(--bg-2); }
+.p-cta-inner { display: flex; justify-content: space-between; gap: 40px; align-items: end; flex-wrap: wrap; padding-bottom: 80px; border-bottom: 1px solid var(--line); }
+.p-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 60px; }
+.p-nav-link { padding: 30px 0; display: flex; flex-direction: column; gap: 10px; color: var(--text); transition: all .2s; }
+.p-nav-link:hover { color: var(--red); }
+.p-nav-link .mono { color: var(--text-3); font-size: 11px; }
+.p-nav-link:hover .mono { color: var(--red); }
+.p-nav-next { text-align: right; align-items: flex-end; }
+.p-nav-name { font-size: 22px; font-weight: 500; letter-spacing: -0.02em; }

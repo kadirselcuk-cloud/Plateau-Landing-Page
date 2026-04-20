@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node_modules/.bin/vite build *)",
+      "Bash(where node *)",
+      "Bash(npm run *)",
+      "WebFetch(domain:www.softtech.com.tr)"
+    ]
+  }
+}
