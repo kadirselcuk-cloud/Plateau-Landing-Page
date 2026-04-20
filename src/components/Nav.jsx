@@ -4,7 +4,7 @@ import Brand from './Brand';
 import LangToggle from './LangToggle';
 import { DEMO_URL } from '../i18n';
 
-const PRODUCT_SLUGS = ['studio', 'workflow', 'superapp', 'security', 'framework', 'horizontal'];
+const PRODUCT_SLUGS = ['studio', 'workflow', 'superapp', 'security', 'framework', 'services'];
 
 export default function Nav({ lang, setLang, t }) {
   const [mobileOpen, setMobileOpen] = useState(false);

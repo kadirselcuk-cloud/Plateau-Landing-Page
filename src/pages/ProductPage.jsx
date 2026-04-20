@@ -8,12 +8,12 @@ import { DEMO_URL } from '../i18n';
 import ProductHeroVisual from '../components/visuals/ProductHeroVisual';
 
 const PRODUCT_META = {
-  studio:     { prev: { slug: 'horizontal', to: '/horizontal' }, next: { slug: 'workflow',   to: '/workflow'   } },
+  studio:     { prev: { slug: 'services', to: '/services' }, next: { slug: 'workflow',   to: '/workflow'   } },
   workflow:   { prev: { slug: 'studio',     to: '/studio'     }, next: { slug: 'superapp',   to: '/superapp'   } },
   superapp:   { prev: { slug: 'workflow',   to: '/workflow'   }, next: { slug: 'security',   to: '/security'   } },
   security:   { prev: { slug: 'superapp',   to: '/superapp'   }, next: { slug: 'framework',  to: '/framework'  } },
-  framework:  { prev: { slug: 'security',   to: '/security'   }, next: { slug: 'horizontal', to: '/horizontal' } },
-  horizontal: { prev: { slug: 'framework',  to: '/framework'  }, next: { slug: 'studio',     to: '/studio'     } },
+  framework:  { prev: { slug: 'security',   to: '/security'   }, next: { slug: 'services', to: '/services' } },
+  services: { prev: { slug: 'framework',  to: '/framework'  }, next: { slug: 'studio',     to: '/studio'     } },
 };
 
 function ProductHero({ t, slug }) {

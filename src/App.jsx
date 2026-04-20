@@ -27,7 +27,7 @@ export default function App() {
         <Route path="/superapp" element={<ProductPage slug="superapp" />} />
         <Route path="/security" element={<ProductPage slug="security" />} />
         <Route path="/framework" element={<ProductPage slug="framework" />} />
-        <Route path="/horizontal" element={<ProductPage slug="horizontal" />} />
+        <Route path="/services" element={<ProductPage slug="services" />} />
       </Routes>
     </BrowserRouter>
   );

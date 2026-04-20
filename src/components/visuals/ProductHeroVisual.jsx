@@ -18,18 +18,18 @@ export default function ProductHeroVisual({ slug }) {
   if (slug === 'framework') return <FrameworkVisual />;
   if (slug === 'security')  return <SecurityHeroAnimation />;
 
-  // horizontal
+  // services
   return (
     <div className="viz" style={{ aspectRatio: '1/1' }}>
       <div className="viz-window" style={{ height: '100%' }}>
         <div className="viz-titlebar">
           <span /><span /><span />
           <div className="mono" style={{ marginLeft: 12, fontSize: 10, color: 'var(--text-3)' }}>
-            horizontal / services
+            plateau / services
           </div>
         </div>
         <div style={{ padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, height: 'calc(100% - 37px)' }}>
-          {['Docs', 'DevOps', 'Test', 'AI'].map((l, i) => (
+          {['Eventstore', 'Reporting', 'DevOps', 'AI'].map((l, i) => (
             <div key={i} style={{
               background: i === 0 ? 'var(--navy)' : 'var(--bg-2)',
               color: i === 0 ? 'white' : 'var(--text)',

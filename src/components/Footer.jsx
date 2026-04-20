@@ -4,7 +4,7 @@ import { DEMO_URL } from '../i18n';
 
 const SOFTTECH_LOGO = 'https://www.softtech.com.tr/dosyalar/header/companyLogo.svg';
 const SOFTTECH_URL  = 'https://www.softtech.com.tr';
-const PRODUCT_SLUGS = ['studio', 'workflow', 'superapp', 'security', 'framework', 'horizontal'];
+const PRODUCT_SLUGS = ['studio', 'workflow', 'superapp', 'security', 'framework', 'services'];
 
 export default function Footer({ t }) {
   return (

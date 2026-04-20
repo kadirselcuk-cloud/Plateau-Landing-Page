@@ -14,7 +14,7 @@ export const PLATEAU_I18N = {
       superapp: "Plateau SuperApp",
       security: "Plateau Security Suite",
       framework: "Plateau Framework",
-      horizontal: "Yatay Çözümler",
+      services: "Plateau Servisleri",
       back: "Ana Sayfaya Dön"
     },
     hero: {
@@ -23,7 +23,7 @@ export const PLATEAU_I18N = {
       title_b: "yükselin",
       title_c: "",
       tagline: "Be on the rise.",
-      lede: "Plateau, tasarımdan geliştirmeye, güvenlikten yayına kadar tüm yazılım yaşam döngüsünü tek bir AI-native platformda birleştiren uçtan uca bir yazılım geliştirme ailesidir.",
+      lede: "Plateau; yapay zeka ve low-code odaklı, uçtan uca yeni nesil yazılım geliştirme platformudur. Tasarımdan geliştirmeye, güvenlikten yayına kadar tüm yazılım yaşam döngüsü tek bir AI-native platformda buluşur.",
       cta_primary: "Demo Talep Et",
       cta_secondary: "Platformu Keşfet",
       meta_1: "Kurumsal ölçek",
@@ -33,8 +33,8 @@ export const PLATEAU_I18N = {
     intro: {
       eyebrow: "PLATEAU PLATFORMU",
       title: "Tek bir platform. Yazılımın her katmanı.",
-      body: "Plateau; arayüz tasarımı, iş akışı otomasyonu, mobil ekosistem, güvenlik, mikroservis mimarisi ve operasyonel araçları tek bir bütün olarak sunar. Ekipleriniz hızlanır, riskler azalır, ölçek büyür.",
-      pills: ["Tasarım", "Geliştirme", "Güvenlik", "Dağıtım", "Gözlemlenebilirlik", "Yapay Zeka"],
+      body: "Plateau; Verimlilik, Yenilikçilik, Ölçeklenebilirlik, Güvenlik ve Kalite olmak üzere 5 temel değer göz önünde bulundurularak geliştirilmiştir. Ekiplerinizi kesintisiz ve kolay bir dijital dönüşüm için güçlendirir.",
+      pills: ["Tasarım", "Workflow", "SuperApp", "Güvenlik", "Framework", "Servisler", "Yapay Zeka"],
       platform_horizontal: "Plateau Servisleri"
     },
     products: {
@@ -43,54 +43,55 @@ export const PLATEAU_I18N = {
       subtitle: "Mimarinin her katmanı için özel olarak tasarlanmış ürünler.",
       learn_more: "Daha fazla",
       studio: {
-        tag: "01 · TASARIM",
+        tag: "01 · TASARIM & GELİŞTİRME",
         name: "Plateau Studio",
-        headline: "Web ve mobil arayüzleri görsel olarak tasarlayın.",
-        body: "Tasarım sistemlerinize bağlı, yapay zeka destekli bir arayüz stüdyosu. Figma'dan üretime kadar tasarımcı ve geliştiriciler aynı dili konuşur.",
-        bullets: ["Tasarım sistemi yönetimi", "Responsive önizleme", "AI ile bileşen üretimi", "Tasarım → kod aktarımı"]
+        headline: "Uygulama geliştirme hızınızı artıran SaaS AI & Low Code platformu.",
+        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, no-code iş akışı editörü ve AI araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlar. 300+ geliştirici ve 3.000+ ekranla kurumsal ölçekte kanıtlanmış.",
+        bullets: ["WYSIWYG editör & anında önizleme", "Sürükle & bırak bileşen kütüphanesi", "No-code iş akışı tasarımı (BPMN)", "AI Chatbot & Kod Asistanı", "REST & SOAP servis entegrasyonu"]
       },
       workflow: {
         tag: "02 · OTOMASYON",
         name: "Plateau Workflow",
-        headline: "İş akışlarınızı sürükle-bırak ile kurgulayın.",
-        body: "Karmaşık iş süreçlerini görsel düzenleyici ile modelleyin. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları kod yazmadan hayata geçer.",
-        bullets: ["Görsel BPMN düzenleyici", "Durum makineleri", "Entegrasyon konnektörleri", "Versiyonlama ve denetim"]
+        headline: "BPMN bilgisi gerektirmeden iş akışları tasarlayın ve çalıştırın.",
+        body: "Plateau Workflow, no-code sürükle & bırak editörüyle karmaşık iş süreçlerini modellemenizi sağlar. Onay zincirleri, koşullu dallanmalar ve doküman yönetimi entegrasyonu ile iş birimleri IT'ye bağımlı kalmaz.",
+        bullets: ["No-code sürükle & bırak iş akışı editörü", "Flow tabanlı süreç ve rol tasarımı", "Doküman yönetimi entegrasyonu", "40M+/yıl iş akışı kapasitesi"]
       },
       superapp: {
         tag: "03 · EKOSİSTEM",
         name: "Plateau SuperApp",
         headline: "Mobil uygulamanızı iş ortaklarınıza açık bir platforma dönüştürün.",
-        body: "Plateau SuperApp; iş ortaklarınızın mini uygulamalarını kendi müşteri tabanınızda çalıştırmasını sağlayan kurumsal süper uygulama altyapısıdır. İş ortakları günler içinde entegre olur, kullanıcılar kesintisiz bir deneyim yaşar.",
-        bullets: ["Partner Portal & self-servis onboarding", "Birleşik kimlik & SSO", "Ortak ödeme altyapısı", "Vitrin & uygulama keşfi", "Gerçek zamanlı ekosistem analitiği"]
+        body: "Plateau SuperApp; iş ortaklarının mobil uygulamaya SDK üzerinden entegre olup kendi mini uygulamalarını geliştirdiği kurumsal süper uygulama altyapısıdır. Mini uygulamalar store süreçlerinden bağımsız olarak güncellenebilir.",
+        bullets: ["Partner Portal & self-servis onboarding", "Birleşik kimlik & SSO", "Ortak ödeme altyapısı", "Mini uygulama vitrin & keşif", "Gerçek zamanlı ekosistem analitiği"]
       },
       security: {
         tag: "04 · GÜVENLİK",
         name: "Plateau Security Suite",
-        headline: "Kritik işlemler için çok katmanlı savunma.",
-        body: "API ağ geçidinden kimlik yönetimine, cihaz korumasından e-posta farkındalığına uzanan uçtan uca güvenlik seti.",
+        headline: "IAM, Edge Gateway, Heimdallr ve ZOKA ile çok katmanlı güvenlik.",
+        body: "Plateau Security; token bazlı yetkilendirme, modern API yönetimi, asimetrik kriptografi tabanlı MFA ve e-posta güvenlik farkındalığı ile kurumsal uygulamalarınızı her katmanda korur. 15M+ müşteri güvencesi.",
         subproducts: {
-          edge: { name: "Plateau Edge", role: "API Gateway", body: "Uç noktalarınızı hız sınırlama, kimlik doğrulama ve trafik yönlendirme ile koruyun." },
-          iam: { name: "Plateau IAM", role: "Kimlik & Erişim", body: "Merkezi kimlik, SSO, federasyon ve ince taneli yetkilendirme." },
-          heimdallr: { name: "Heimdallr", role: "İleri Güvenlik & MFA", body: "Kritik işlemlerde güvenli çok faktörlü doğrulama ve cihaz koruması." },
-          zoka: { name: "ZOKA", role: "E-posta Farkındalığı", body: "Kimlik avına karşı simülasyon, eğitim ve ölçülebilir kullanıcı farkındalığı." }
+          edge: { name: "Plateau Edge", role: "API Gateway", body: "Token ve rol bazlı yetkilendirme, tek noktadan erişim, gelişmiş tehdit koruması. 400+ uygulama tarafından kullanılmaktadır." },
+          iam: { name: "Plateau IAM", role: "Kimlik & Erişim", body: "OAuth 2.0 & OpenID Connect uyumlu kimlik yönetimi. SSO, MFA, özelleştirilebilir login akışları. 25.000+ aktif kullanıcı." },
+          heimdallr: { name: "Heimdallr", role: "İleri Güvenlik & MFA", body: "Asimetrik kriptografi ile ikinci faktör doğrulama. Dijital imza tabanlı yetkilendirilmiş cihaz garantisi." },
+          zoka: { name: "ZOKA", role: "E-posta Farkındalığı", body: "Kurum içi phishing simülasyonu, kampanya yönetimi ve kullanıcı bazlı farkındalık istatistikleri." }
         }
       },
       framework: {
         tag: "05 · MİMARİ",
         name: "Plateau Framework",
-        headline: "Kurumsal mikroservisler için sağlam bir iskelet.",
-        body: "Java ve .NET desteğiyle; izleme, iz sürme, loglama ve önbellekleme gibi fonksiyonel olmayan gereksinimleri kutudan çıktığı gibi sağlayan mikroservis çatısı.",
-        bullets: ["Monitoring", "Tracing", "Logging", "Caching", "Java & .NET"]
+        headline: "Mikroservisleri standart ve kalitede geliştiren kurumsal framework.",
+        body: "Plateau Framework; Java ve .NET desteğiyle mikroservislerin belirli bir standart ve kalitede geliştirilmesini sağlar. Low-code araç setleri, ölçeklendirme ve AI destekli geliştirme ortamı sunar. 650+ geliştirici, 1.350+ mikroservis.",
+        bullets: ["Java/Spring & .NET desteği", "On-Prem & Cloud dağıtımı", "AI & Low-Code geliştirme araçları", "Standardize hata yakalama & loglama", "Yatay & dikey ölçeklendirme"]
       },
-      horizontal: {
-        tag: "06 · YATAY ÇÖZÜMLER",
+      services: {
+        tag: "06 · ORTAK SERVİSLER",
         name: "Plateau Servisleri",
-        headline: "Her organizasyonun ihtiyaç duyduğu temel yetenekler.",
-        body: "Belge yönetiminden DevOps ve test otomasyonuna kadar yapay zeka ile güçlendirilmiş operasyonel yetenekler.",
+        headline: "Her uygulamanın ihtiyaç duyduğu hazır operasyonel servisler.",
+        body: "Eventstore (denetim izi), Raporlama, Doküman Yönetimi ve Bildirim gibi kapsamlı servisler ile DevOps ve Test Otomasyonu araçları — yapay zeka ile güçlendirilmiş biçimde kesintisiz entegre destek.",
         items: [
-          { name: "Document Management", body: "Belge yaşam döngüsü, versiyonlama, imza ve arama." },
-          { name: "DevOps", body: "CI/CD, ortam yönetimi ve AI destekli sürüm operasyonları." },
-          { name: "Test Automation", body: "AI ile test senaryosu üretimi, regresyon ve görsel karşılaştırma." }
+          { name: "Eventstore & Raporlama", body: "Denetim izi, kapsamlı raporlama ve analiz altyapısı." },
+          { name: "Doküman Yönetimi & Bildirim", body: "Belge yaşam döngüsü, DYS entegrasyonu ve çok kanallı bildirim sistemi." },
+          { name: "DevOps & Test Otomasyonu", body: "CI/CD pipeline'ları ve AI destekli test senaryosu üretimi ile yazılım kalitesini artırın." },
+          { name: "AI Araçları", body: "Geliştirme süreçlerini hızlandıran ve verimliliği artıran yapay zeka araç seti." }
         ]
       }
     },
@@ -98,10 +99,10 @@ export const PLATEAU_I18N = {
       eyebrow: "RAKAMLARLA PLATEAU",
       title: "Ölçek, güven ve süreklilik.",
       stats: [
-        { value: "120+", label: "Kurumsal müşteri", note: "örnek değer" },
-        { value: "40M+", label: "Aktif son kullanıcı", note: "örnek değer" },
-        { value: "2.8B", label: "Aylık API çağrısı", note: "örnek değer" },
-        { value: "99.99%", label: "Uptime SLA", note: "hedef" }
+        { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
+        { value: "1.350+", label: "Aktif mikroservis", note: "Plateau Framework" },
+        { value: "150M+", label: "Aylık BFF işlemi", note: "Plateau Studio" },
+        { value: "40M+", label: "Yıllık iş akışı", note: "Plateau Workflow" }
       ]
     },
     refs: {
@@ -121,7 +122,7 @@ export const PLATEAU_I18N = {
     cta: {
       eyebrow: "BAŞLAYALIM",
       title: "Yazılımınızı yükselişe geçirmeye hazır mısınız?",
-      body: "Plateau ekibiyle tanışın, kurumunuza özel bir demo ile başlayın. Ürün detayları için Softtech ürün sayfasını ziyaret edebilirsiniz.",
+      body: "Plateau ekibiyle tanışın, kurumunuza özel bir demo ile başlayın.",
       primary: "Demo Talep Et",
       secondary: "Softtech / Plateau'yu ziyaret et"
     },
@@ -137,62 +138,63 @@ export const PLATEAU_I18N = {
     },
     pages: {
       studio: {
-        hero: "Arayüz tasarımını ekibinizin ortak dili yapın.",
-        body: "Plateau Studio; tasarımcı ve geliştiricilerin aynı tasarım sistemine bağlı kaldığı, yapay zeka destekli bir web ve mobil tasarım ortamıdır.",
+        hero: "Uygulama geliştirmeyi hızlandıran AI & Low Code SaaS platformu.",
+        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, no-code iş akışı editörü ve AI destekli araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlayan güçlü bir SaaS platformdur.",
         features: [
-          { name: "Tasarım sistemi", body: "Token, bileşen ve stil kataloglarınızı merkezî olarak yönetin." },
-          { name: "AI ile bileşen", body: "Doğal dilden bileşen taslakları üretin, sistem ile uyumlu kalın." },
-          { name: "Responsive önizleme", body: "Her kırılım noktası için birebir önizleme." },
-          { name: "Kod teslimi", body: "Geliştiricilere üretime uygun kod çıktıları teslim edin." }
+          { name: "Plateau UI Editör", body: "WYSIWYG editör, sürükle & bırak bileşen kütüphanesi, responsive tasarım, multi-resolution önizleme ve çoklu tema desteğiyle web ve mobil arayüzleri hızla oluşturun. Typescript dil desteği ve native bileşen desteği dahil." },
+          { name: "Workflow Editör", body: "BPMN bilgisi gerektirmeyen no-code sürükle & bırak iş akışı editörü. Flow tabanlı süreç modellemesi, rol ve havuz tasarımı, doküman yönetimi entegrasyonu ve HSA yönetimi." },
+          { name: "AI Özellikleri", body: "AI Chatbot ve Kod Asistanı ile geliştirme süreçlerinizi hızlandırın. Dokümantasyon Portalı, Studio Academy ve Video Portalı ile ekibinizi destekleyin." },
+          { name: "Servis & Veri Entegrasyonu", body: "REST & SOAP servis entegrasyonu, mock data kullanımı, servis önbellekleme (cache) ve görsel veri tipi tasarım araçlarıyla ön yüzden servis bağlantısı." }
         ]
       },
       workflow: {
-        hero: "İş süreçlerini görsel olarak tasarlayın, saniyeler içinde yayınlayın.",
-        body: "Plateau Workflow, iş birimleri ve IT arasındaki boşluğu kapatan görsel bir süreç düzenleyicisidir.",
+        hero: "BPMN bilgisi gerektirmeyen no-code iş akışı platformu.",
+        body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları no-code olarak hayata geçer.",
         features: [
-          { name: "Sürükle-bırak", body: "Karmaşık süreçleri blok mantığıyla modelleyin." },
-          { name: "Durum makinesi", body: "İşlem yaşam döngüsünü açıkça tanımlayın ve denetleyin." },
-          { name: "Entegrasyonlar", body: "Hazır konnektörlerle kurumsal sistemlere bağlanın." },
-          { name: "Versiyonlama", body: "Her değişikliğin tam geçmişi ve geri alma yeteneği." }
+          { name: "No-Code Sürükle & Bırak Editör", body: "BPMN bilgisi gerektirmeden iş akışları tasarlayın. Flow tabanlı süreç modellemesi ile karmaşık iş süreçlerini kolayca kurgulayın ve yönetin." },
+          { name: "Rol & Havuz Tasarımı", body: "Süreç tabanlı rol ve havuz tanımlamaları ile görev atamalarını yönetin. HSA (İnsan Servis Aktivitesi) yönetimi dahil." },
+          { name: "Entegrasyon & Servisler", body: "REST & SOAP servis entegrasyonu ve doküman yönetimi sistemleriyle kesintisiz bağlantı. Servis önbellekleme ve mock data desteği." },
+          { name: "Ölçek & Güvenilirlik", body: "40M+/yıl iş akışı ve 150M+/aylık BFF işlemi kapasitesiyle kurumsal ölçekte kanıtlanmış performans ve güvenilirlik." }
         ]
       },
       superapp: {
-        hero: "Mini uygulama pazarı kurun — iş ortaklarınız müşterilerinize doğrudan ulaşsın.",
-        body: "Plateau SuperApp; partner onboarding iş akışlarından çalışma zamanı izolasyonuna, derin bağlantıdan gelir paylaşımına kadar kurumsal ölçekte bir mini uygulama ekosistemi çalıştırmak için ihtiyaç duyduğunuz her şeyi sunar.",
+        hero: "Mini uygulama ekosistemi kurun — iş ortaklarınız müşterilerinize doğrudan ulaşsın.",
+        body: "Plateau SuperApp; iş ortaklarının SDK üzerinden entegre olup kendi mini uygulamalarını geliştirdiği kurumsal süper uygulama altyapısıdır. Mini uygulamalar store süreçlerinden bağımsız olarak güncellenebilir ve hem iş ortakları hem de SuperApp sahibi gelir çeşitliliği sağlar.",
         features: [
-          { name: "Partner Portal", body: "İş ortaklarının mini uygulamalarını kayıt ettirebildiği, gönderdiği ve yönettiği self-servis portal. Onay iş akışları ve versiyon yönetimi dahil." },
-          { name: "Mini-App SDK", body: "Hazır UI bileşenleri, navigasyon ve derin bağlantı desteği sunan hafif SDK. İş ortakları aylarca beklemeden günler içinde entegre olur." },
-          { name: "Birleşik Kimlik & Cüzdan", body: "Her mini uygulamada tek oturum ve tek cüzdan. Kullanıcılar kimlik ve ödeme bilgilerini ekosistem genelinde kesintisiz taşır." },
-          { name: "Ekosistem Analitiği", body: "Kullanım, dönüşüm ve gelir için gerçek zamanlı panolar — hem platform geneli hem de her iş ortağı için ayrı ayrı izleme." }
+          { name: "Super Portal", body: "Mini uygulama yaşam döngüsü yönetimi: onay ve yönetim iş akışları, sürüm gerektirmeden kaldırma, web view mini uygulama konfigürasyonu, kullanıcı yönetimi ve ödeme analizi & izleme." },
+          { name: "Mini-App SDK & Geliştirme", body: "Plateau UI Editor ile hızlı mini uygulama geliştirme ortamı. Canlı önizleme, kullanıma hazır şablonlar, özelleştirilmiş bileşenler ve Dataroid entegrasyonu ile analiz." },
+          { name: "Birleşik Kimlik & Cüzdan", body: "Her mini uygulamada tek oturum açma (SSO) ve birleşik cüzdan. Ortak ödeme altyapısı ve rıza yönetimi modülleriyle kullanıcı deneyimi kesintisiz devam eder." },
+          { name: "Ekosistem Analitiği", body: "Kullanım, dönüşüm ve gelir için gerçek zamanlı panolar. Platform geneli ve iş ortağı bazında detaylı izleme ve raporlama." }
         ]
       },
       security: {
-        hero: "Uçtan uca savunma: ağ kenarı, kimlik, kritik işlem ve kullanıcı farkındalığı.",
-        body: "Plateau Security Suite; API gateway, IAM, gelişmiş MFA/cihaz koruması ve e-posta farkındalığı olmak üzere dört bileşenden oluşur.",
+        hero: "IAM, Edge Gateway, Heimdallr ve ZOKA ile uçtan uca güvenlik altyapısı.",
+        body: "Plateau Security Suite; token bazlı yetkilendirme, modern API yönetimi, asimetrik kriptografi tabanlı MFA ve e-posta güvenlik farkındalığı olmak üzere dört bileşenden oluşan kapsamlı bir güvenlik platformudur.",
         features: [
-          { name: "Plateau Edge", body: "API Gateway — uç noktalarınızın tek kapısı." },
-          { name: "Plateau IAM", body: "Kimlik, erişim, SSO ve federasyon." },
-          { name: "Heimdallr", body: "Kritik işlemlerde güvenli MFA ve cihaz koruması." },
-          { name: "ZOKA", body: "E-posta farkındalığı ve kimlik avı simülasyonu." }
+          { name: "Plateau IAM", body: "OAuth 2.0 ve OpenID Connect standartlarına uygun kimlik ve erişim yönetimi. Özelleştirilebilir login akışları, SSO, merkezi çıkış, MFA, Redhat destekli altyapı ve brute force önlemleri. 25.000+ aktif kullanıcı." },
+          { name: "Plateau Edge API Gateway", body: "Token ve rol bazlı yetkilendirme, tek noktadan erişim hizmeti, gelişmiş tehdit koruması, istek validasyonu ve manipülasyonu, yüksek ölçeklendirilebilirlik ve düşük gecikme. 400+ uygulama tarafından kullanılmaktadır." },
+          { name: "Heimdallr", body: "Asimetrik kriptografi yöntemleriyle ikinci faktör kimlik doğrulama. Dijital imza tabanlı kimlik doğrulama, yetkilendirilmiş cihaz garantisi, timestamp desteği. SDK, mobil ve intranet modülleri." },
+          { name: "ZOKA", body: "Kurum içi siber güvenlik farkındalığı için phishing simülasyonu. Kampanya hazırlama, kullanıcı bazlı takip, mail açılma/tıklanma/bilgi girişi istatistikleri ve dashboard üzerinde detaylı raporlama." }
         ]
       },
       framework: {
-        hero: "Kurumsal mikroservisler için hazır iskelet — Java & .NET.",
-        body: "Plateau Framework, fonksiyonel olmayan gereksinimleri kutudan çıktığı gibi sunan bir mikroservis çatısıdır.",
+        hero: "Java & .NET mikroservisleri standart ve kalitede geliştirin.",
+        body: "Plateau Framework; mikroservislerin belirli bir standart ve kalitede geliştirilmesine olanak sağlayan kurumsal frameworktür. Ölçeklenebilir ve dağıtık uygulama geliştirmeyi kolaylaştırır. 650+ geliştirici ve 1.350+ mikroservisyle kanıtlanmış.",
         features: [
-          { name: "Monitoring", body: "Sağlık, metrik ve alarm yönetimi." },
-          { name: "Tracing", body: "Dağıtık iz sürme ile uçtan uca görünürlük." },
-          { name: "Logging", body: "Yapılandırılmış ve korelasyon kimlikli loglama." },
-          { name: "Caching", body: "Dağıtık önbellekleme ve geçersiz kılma stratejileri." }
+          { name: "Java & .NET Desteği", body: "Java/Spring ve .NET ile mikroservis geliştirmeyi hızlandıran low-code araç setleri. Standardize hata yakalama, loglama ve önbellek yönetimi kutudan çıktığı gibi gelir." },
+          { name: "Ölçeklendirme & Dağıtım", body: "Artan yük ile yatay ve dikey ölçeklendirme. On-Prem ve Cloud ortamlarında sorunsuz dağıtım desteği. Millions+ işlem/gün kapasitesi." },
+          { name: "AI & Low-Code Araçları", body: "Geliştirme süreçlerini hızlandıran AI destekli araçlar ve low-code geliştirme ortamı ile ekibinizin verimliliğini artırın." },
+          { name: "Operasyonel Olgunluk", body: "Yerelleştirme yönetimi, uygulama metrikleri ve performans izleme altyapısı. Kapsamlı dokümantasyon ve kullanıcı kılavuzlarıyla kolay onboarding." }
         ]
       },
-      horizontal: {
-        hero: "Her kurumun ihtiyaç duyduğu yatay yetenekler.",
-        body: "Belge yönetimi, DevOps ve test otomasyonu gibi operasyonel yetenekler, yapay zeka ile güçlendirilmiş biçimde.",
+      services: {
+        hero: "Eventstore, Raporlama, Doküman Yönetimi ve DevOps — tek platformda.",
+        body: "Plateau Servisleri; uygulamalarınız için kesintisiz ve entegre operasyonel destek sağlayan kapsamlı servis paketidir. Denetim izinden bildirimlere, DevOps'tan test otomasyonuna kadar her ihtiyaç karşılanır.",
         features: [
-          { name: "Document Management", body: "Belge yaşam döngüsü, versiyonlama, imza ve arama." },
-          { name: "DevOps", body: "CI/CD, ortam yönetimi ve AI destekli sürüm operasyonları." },
-          { name: "Test Automation", body: "AI ile test üretimi, regresyon ve görsel karşılaştırma." }
+          { name: "Eventstore", body: "Uygulamalarınızdaki tüm olayların denetim izini tutun. Kapsamlı olay kaydı, geriye dönük sorgulama ve audit trail altyapısı." },
+          { name: "Raporlama & Doküman Yönetimi", body: "Kurumsal raporlama altyapısı ve DYS entegrasyonu. Belge yaşam döngüsü yönetimi, versiyonlama ve arşivleme." },
+          { name: "Bildirim Servisi", body: "E-posta, SMS ve push notification kanallarıyla çok kanallı bildirim altyapısı. Scheduler ve metadata yönetimi dahil." },
+          { name: "DevOps & Test Otomasyonu", body: "CI/CD pipeline'ları, ortam yönetimi ve AI destekli test senaryosu üretimi ile yazılım kalitesini ve üretim hattınızı güçlendirin." }
         ]
       }
     }
@@ -210,7 +212,7 @@ export const PLATEAU_I18N = {
       superapp: "Plateau SuperApp",
       security: "Plateau Security Suite",
       framework: "Plateau Framework",
-      horizontal: "Horizontal Solutions",
+      services: "Plateau Services",
       back: "Back to home"
     },
     hero: {
@@ -219,7 +221,7 @@ export const PLATEAU_I18N = {
       title_b: "Plateau",
       title_c: "",
       tagline: "Be on the rise.",
-      lede: "Plateau is an end-to-end, AI-native software development platform family — unifying design, delivery, security, and operations in one coherent system.",
+      lede: "Plateau is a next-generation, end-to-end software development platform focused on AI and low-code — unifying design, delivery, security, and operations in one coherent system.",
       cta_primary: "Request a Demo",
       cta_secondary: "Explore the platform",
       meta_1: "Enterprise scale",
@@ -229,8 +231,8 @@ export const PLATEAU_I18N = {
     intro: {
       eyebrow: "THE PLATEAU PLATFORM",
       title: "One platform. Every layer of software.",
-      body: "Plateau unifies UI design, workflow automation, mobile ecosystems, security, microservice architecture and operational tooling into a single, coherent system. Teams move faster, risks drop, scale compounds.",
-      pills: ["Design", "Development", "Security", "Delivery", "Observability", "AI"],
+      body: "Plateau is built on five core values: Productivity, Innovation, Scalability, Security and Quality. Its mission is to empower organizations to achieve seamless and effortless digital transformation.",
+      pills: ["Design", "Workflow", "SuperApp", "Security", "Framework", "Services", "AI"],
       platform_horizontal: "Plateau Services"
     },
     products: {
@@ -239,54 +241,55 @@ export const PLATEAU_I18N = {
       subtitle: "Purpose-built products for every layer of your architecture.",
       learn_more: "Learn more",
       studio: {
-        tag: "01 · DESIGN",
+        tag: "01 · DESIGN & DEVELOPMENT",
         name: "Plateau Studio",
-        headline: "Design web and mobile interfaces, visually.",
-        body: "An AI-assisted UI studio wired to your design system. Designers and engineers speak the same language from Figma to production.",
-        bullets: ["Design system management", "Responsive preview", "AI component generation", "Design → code handoff"]
+        headline: "The SaaS AI & Low Code platform that accelerates application development.",
+        body: "Plateau Studio combines a WYSIWYG editor, drag-and-drop component library, no-code workflow builder and AI tools to build web and mobile apps faster. 300+ developers, 3,000+ screens built.",
+        bullets: ["WYSIWYG editor & instant preview", "Drag & drop component library", "No-code workflow design (BPMN)", "AI Chatbot & Code Assistant", "REST & SOAP service integration"]
       },
       workflow: {
         tag: "02 · AUTOMATION",
         name: "Plateau Workflow",
-        headline: "Compose workflows with a drag-and-drop editor.",
-        body: "Model complex business processes visually. Approval chains, conditional branching and system integrations ship without writing code.",
-        bullets: ["Visual BPMN editor", "State machines", "Integration connectors", "Versioning & audit"]
+        headline: "Design and run workflows without any BPMN knowledge.",
+        body: "Plateau Workflow's no-code drag-and-drop editor lets business teams model approval chains, conditional branching and document management integrations without writing code. 40M+ workflows run per year.",
+        bullets: ["No-code drag & drop workflow editor", "Flow-based process & role design", "Document management integration", "40M+ workflows per year"]
       },
       superapp: {
         tag: "03 · ECOSYSTEM",
         name: "Plateau SuperApp",
         headline: "Turn your mobile app into a platform your partners build on.",
-        body: "Plateau SuperApp is the enterprise infrastructure for running a mini-app ecosystem. Partners onboard in days, not months. Users get one login, one wallet, one seamless experience across every mini-app.",
-        bullets: ["Partner Portal & self-serve onboarding", "Unified identity & SSO", "Shared payment rails", "Storefront & app discovery", "Real-time ecosystem analytics"]
+        body: "Plateau SuperApp is the enterprise infrastructure for running a mini-app ecosystem. Partners onboard via SDK, develop their own mini-apps and generate revenue — while mini-apps update independently of app store processes.",
+        bullets: ["Partner Portal & self-serve onboarding", "Unified identity & SSO", "Shared payment rails", "Mini-app storefront & discovery", "Real-time ecosystem analytics"]
       },
       security: {
         tag: "04 · SECURITY",
         name: "Plateau Security Suite",
-        headline: "Layered defense for critical transactions.",
-        body: "From API gateway to identity management, device protection to email awareness — end-to-end security stack.",
+        headline: "Layered defense with IAM, Edge Gateway, Heimdallr and ZOKA.",
+        body: "Plateau Security protects enterprise applications at every layer — token-based authorization, modern API management, asymmetric cryptography-based MFA and email security awareness. 15M+ customers secured.",
         subproducts: {
-          edge: { name: "Plateau Edge", role: "API Gateway", body: "Protect your endpoints with rate limiting, authentication and traffic routing." },
-          iam: { name: "Plateau IAM", role: "Identity & Access", body: "Centralized identity, SSO, federation and fine-grained authorization." },
-          heimdallr: { name: "Heimdallr", role: "Advanced Security & MFA", body: "Secure multi-factor authentication for critical transactions and device protection." },
-          zoka: { name: "ZOKA", role: "Email Awareness", body: "Phishing simulation, training and measurable user awareness." }
+          edge: { name: "Plateau Edge", role: "API Gateway", body: "Token and role-based authorization, single-point access, advanced threat protection and high-performance API management. Used by 400+ applications." },
+          iam: { name: "Plateau IAM", role: "Identity & Access", body: "OAuth 2.0 & OpenID Connect compliant identity management. SSO, MFA, customizable login flows. 25,000+ active users." },
+          heimdallr: { name: "Heimdallr", role: "Advanced Security & MFA", body: "Second-factor authentication via asymmetric cryptography. Digital signature-based verification with authorized device guarantee." },
+          zoka: { name: "ZOKA", role: "Email Awareness", body: "Phishing simulation for enterprise-wide cyber security awareness. Campaign management, per-user tracking and dashboard statistics." }
         }
       },
       framework: {
         tag: "05 · ARCHITECTURE",
         name: "Plateau Framework",
-        headline: "A robust skeleton for enterprise microservices.",
-        body: "A microservice framework supporting Java and .NET — with monitoring, tracing, logging and caching out of the box.",
-        bullets: ["Monitoring", "Tracing", "Logging", "Caching", "Java & .NET"]
+        headline: "Build microservices to a consistent standard — Java & .NET.",
+        body: "Plateau Framework enables consistent, high-quality microservice development with low-code toolsets, scaling support and AI-assisted tooling. Proven at scale — 650+ developers, 1,350+ microservices.",
+        bullets: ["Java/Spring & .NET support", "On-Prem & Cloud deployment", "AI & Low-Code dev tools", "Standardized error handling & logging", "Horizontal & vertical scaling"]
       },
-      horizontal: {
-        tag: "06 · HORIZONTAL",
+      services: {
+        tag: "06 · PLATFORM SERVICES",
         name: "Plateau Services",
-        headline: "The foundational capabilities every organization needs.",
-        body: "Document management, DevOps and test automation — all enhanced by AI, operating across the enterprise.",
+        headline: "The ready-made operational services every application needs.",
+        body: "Eventstore (audit trail), Reporting, Document Management and Notification — plus DevOps and Test Automation — all AI-enhanced and seamlessly integrated for continuous operational support.",
         items: [
-          { name: "Document Management", body: "Document lifecycle, versioning, signing and search." },
-          { name: "DevOps", body: "CI/CD, environment management and AI-assisted release ops." },
-          { name: "Test Automation", body: "AI-generated tests, regression and visual diffing." }
+          { name: "Eventstore & Reporting", body: "Audit trail, comprehensive reporting and analytics infrastructure." },
+          { name: "Document Management & Notification", body: "Document lifecycle, DMS integration and multi-channel notification delivery." },
+          { name: "DevOps & Test Automation", body: "CI/CD pipelines and AI-generated test scenarios to increase quality and release velocity." },
+          { name: "AI Tooling", body: "AI tools that accelerate development and boost productivity across your entire stack." }
         ]
       }
     },
@@ -294,10 +297,10 @@ export const PLATEAU_I18N = {
       eyebrow: "PLATEAU BY THE NUMBERS",
       title: "Scale, trust, continuity.",
       stats: [
-        { value: "120+", label: "Enterprise customers", note: "sample value" },
-        { value: "40M+", label: "Active end users", note: "sample value" },
-        { value: "2.8B", label: "Monthly API calls", note: "sample value" },
-        { value: "99.99%", label: "Uptime SLA", note: "target" }
+        { value: "15M+", label: "Customers secured", note: "Plateau Security" },
+        { value: "1,350+", label: "Active microservices", note: "Plateau Framework" },
+        { value: "150M+", label: "Monthly BFF transactions", note: "Plateau Studio" },
+        { value: "40M+", label: "Workflows per year", note: "Plateau Workflow" }
       ]
     },
     refs: {
@@ -317,7 +320,7 @@ export const PLATEAU_I18N = {
     cta: {
       eyebrow: "LET'S BEGIN",
       title: "Ready to put your software on the rise?",
-      body: "Meet the Plateau team and start with a tailored demo. For product details you can visit the Softtech product page.",
+      body: "Meet the Plateau team and start with a tailored demo.",
       primary: "Request a Demo",
       secondary: "Visit Softtech / Plateau"
     },
@@ -333,62 +336,63 @@ export const PLATEAU_I18N = {
     },
     pages: {
       studio: {
-        hero: "Make interface design the shared language of your team.",
-        body: "Plateau Studio is an AI-assisted web and mobile design environment where designers and engineers stay bound to the same design system.",
+        hero: "The AI & Low Code SaaS platform that accelerates application development.",
+        body: "Plateau Studio is a powerful SaaS AI & Low Code platform designed for modern software needs — combining a WYSIWYG editor, drag-and-drop components, no-code workflow builder and AI tools in one environment.",
         features: [
-          { name: "Design system", body: "Centrally govern tokens, components and style catalogs." },
-          { name: "AI components", body: "Generate component drafts from natural language, on-system." },
-          { name: "Responsive preview", body: "Pixel-accurate preview at every breakpoint." },
-          { name: "Code handoff", body: "Ship production-ready output to engineering." }
+          { name: "Plateau UI Editor", body: "WYSIWYG editor with drag-and-drop component library, responsive design, multi-resolution preview, branding and multi-theme support. Typescript and native component support included." },
+          { name: "Workflow Editor", body: "No-code drag & drop workflow editor requiring no BPMN knowledge. Flow-based process modeling, role and pool design, document management integration and HSA management." },
+          { name: "AI Features", body: "AI Chatbot and Code Assistant to speed up development. Documentation Portal, Studio Academy and Video Portal to support your team at every stage." },
+          { name: "Service & Data Integration", body: "REST & SOAP service integration with mock data support, service caching and visual data type design tools for seamless front-end connectivity." }
         ]
       },
       workflow: {
-        hero: "Design processes visually, ship them in minutes.",
-        body: "Plateau Workflow closes the gap between business and IT with a visual process editor.",
+        hero: "The no-code workflow platform — no BPMN knowledge required.",
+        body: "Plateau Workflow closes the gap between business and IT with a visual process editor. Approval chains, conditional branching and system integrations ship without writing any code.",
         features: [
-          { name: "Drag & drop", body: "Model complex processes with a block metaphor." },
-          { name: "State machine", body: "Make the transaction lifecycle explicit and auditable." },
-          { name: "Integrations", body: "Plug into enterprise systems with ready connectors." },
-          { name: "Versioning", body: "Full history and rollback on every change." }
+          { name: "No-Code Drag & Drop Editor", body: "Design workflows without BPMN expertise. Flow-based process modeling makes complex business processes easy to build, maintain and govern." },
+          { name: "Role & Pool Design", body: "Process-based role and pool definitions for task assignments and governance. Human Service Activity (HSA) management included." },
+          { name: "Integration & Services", body: "REST & SOAP service integration and seamless connectivity with document management systems. Service caching and mock data support." },
+          { name: "Scale & Reliability", body: "Proven at enterprise scale — 40M+ workflows per year and 150M+ monthly BFF transactions with high availability." }
         ]
       },
       superapp: {
-        hero: "Run a mini-app marketplace — let partners reach your customers directly.",
-        body: "Plateau SuperApp gives you everything you need to operate an enterprise-grade mini-app ecosystem: partner onboarding workflows, runtime isolation, deep linking, and revenue sharing — all in one platform.",
+        hero: "Run a mini-app ecosystem — let partners reach your customers directly.",
+        body: "Plateau SuperApp is the enterprise infrastructure for a mini-app platform. Partners integrate via SDK and develop their own mini-apps — which update independently of app store processes — while both partners and the SuperApp owner gain diversified revenue.",
         features: [
-          { name: "Partner Portal", body: "Self-service portal where partners register, submit, and manage mini-apps. Built-in approval workflows, versioning, and compliance checks." },
-          { name: "Mini-App SDK", body: "Lightweight SDK with pre-built UI components, navigation primitives, and deep-link support. Partners ship in days, not months." },
-          { name: "Unified Identity & Wallet", body: "One session and one wallet across every mini-app. Users carry their credentials and payment methods seamlessly across the entire ecosystem." },
-          { name: "Ecosystem Analytics", body: "Real-time dashboards covering usage, conversion, and revenue — both platform-wide and per partner, with drill-down reporting." }
+          { name: "Super Portal", body: "Mini-app lifecycle management: approval and governance workflows, removal without a new app release, web view configuration, user management and payment analytics & monitoring." },
+          { name: "Mini-App SDK & Development", body: "Rapid mini-app development environment with Plateau UI Editor. Live preview, ready-to-use templates, customized components and Dataroid integration for analytics." },
+          { name: "Unified Identity & Wallet", body: "Single sign-on and unified wallet across every mini-app. Shared payment infrastructure and consent management modules for a seamless user experience." },
+          { name: "Ecosystem Analytics", body: "Real-time dashboards covering usage, conversion and revenue — both platform-wide and per partner, with drill-down reporting." }
         ]
       },
       security: {
-        hero: "End-to-end defense: edge, identity, critical transactions, user awareness.",
-        body: "Plateau Security Suite consists of four components: API gateway, IAM, advanced MFA / device protection, and email awareness.",
+        hero: "IAM, Edge Gateway, Heimdallr and ZOKA — end-to-end security infrastructure.",
+        body: "Plateau Security Suite consists of four components that protect enterprise applications at every layer: token-based authorization, modern API management, asymmetric cryptography-based MFA and email security awareness.",
         features: [
-          { name: "Plateau Edge", body: "API Gateway — the single door to your endpoints." },
-          { name: "Plateau IAM", body: "Identity, access, SSO and federation." },
-          { name: "Heimdallr", body: "Secure MFA and device protection for critical transactions." },
-          { name: "ZOKA", body: "Email awareness and phishing simulation." }
+          { name: "Plateau IAM", body: "OAuth 2.0 and OpenID Connect compliant identity and access management. Customizable login flows, SSO, centralized logout, MFA, Red Hat-backed infrastructure and brute force protection. 25,000+ active users." },
+          { name: "Plateau Edge API Gateway", body: "Token and role-based authorization, single-point access, advanced threat protection, request validation and manipulation, high scalability and low latency. Used by 400+ applications." },
+          { name: "Heimdallr", body: "Second-factor authentication via asymmetric cryptography. Digital signature-based verification, authorized device guarantee, timestamp support. SDK, mobile and intranet modules." },
+          { name: "ZOKA", body: "Phishing simulation for enterprise cyber security awareness. Campaign creation, per-user tracking, open/click/data-entry statistics and detailed dashboard reporting." }
         ]
       },
       framework: {
-        hero: "A ready skeleton for enterprise microservices — Java & .NET.",
-        body: "Plateau Framework delivers non-functional requirements out of the box.",
+        hero: "Build Java & .NET microservices to a consistent standard.",
+        body: "Plateau Framework is an enterprise microservice framework that enables consistent, high-quality service development. It simplifies scalable, distributed application building — proven with 650+ developers and 1,350+ microservices.",
         features: [
-          { name: "Monitoring", body: "Health, metrics and alerting." },
-          { name: "Tracing", body: "End-to-end visibility with distributed tracing." },
-          { name: "Logging", body: "Structured logs with correlation IDs." },
-          { name: "Caching", body: "Distributed caching and invalidation strategies." }
+          { name: "Java & .NET Support", body: "Low-code toolsets accelerating Java/Spring and .NET microservice development. Standardized error handling, logging and cache management come out of the box." },
+          { name: "Scaling & Deployment", body: "Horizontal and vertical scaling under load. On-Prem and Cloud deployment support. Proven at millions of transactions per day." },
+          { name: "AI & Low-Code Tooling", body: "AI-assisted tools and a low-code development environment that accelerate the development lifecycle and boost team productivity." },
+          { name: "Operational Maturity", body: "Localization management, application metrics and performance monitoring infrastructure. Comprehensive documentation and user guides for easy onboarding." }
         ]
       },
-      horizontal: {
-        hero: "Horizontal capabilities every organization needs.",
-        body: "Document management, DevOps and test automation — enhanced by AI.",
+      services: {
+        hero: "Eventstore, Reporting, Document Management and DevOps — in one platform.",
+        body: "Plateau Services is a comprehensive package providing seamless, integrated operational support for your applications — from audit trails to notifications, DevOps to test automation, all AI-enhanced.",
         features: [
-          { name: "Document Management", body: "Document lifecycle, versioning, signing and search." },
-          { name: "DevOps", body: "CI/CD, environments and AI-assisted release ops." },
-          { name: "Test Automation", body: "AI-generated tests, regression and visual diffing." }
+          { name: "Eventstore", body: "Capture the full audit trail of all events across your applications. Comprehensive event logging and retrospective query infrastructure." },
+          { name: "Reporting & Document Management", body: "Enterprise reporting infrastructure and DMS integration. Document lifecycle management, versioning and archiving." },
+          { name: "Notification Service", body: "Multi-channel notification delivery via email, SMS and push notification. Scheduler and metadata management included." },
+          { name: "DevOps & Test Automation", body: "CI/CD pipelines, environment management and AI-generated test scenarios to increase software quality and release velocity." }
         ]
       }
     }

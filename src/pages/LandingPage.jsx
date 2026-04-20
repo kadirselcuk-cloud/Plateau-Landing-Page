@@ -8,6 +8,12 @@ import { useCounter } from '../hooks/useCounter';
 import { DEMO_URL } from '../i18n';
 import studioImg from '../assets/studio-preview.png';
 import SuperAppPhones from '../components/visuals/SuperAppPhones';
+import refIsbank      from '../assets/refs/isbank.png';
+import refZiraat      from '../assets/refs/ziraat.gif';
+import refMaximum     from '../assets/refs/maximum.svg';
+import refIsfaktoring from '../assets/refs/isfaktoring.svg';
+import refFigopara    from '../assets/refs/figopara.svg';
+import refIsportfoy   from '../assets/refs/isportfoy.gif';
 import WorkflowVisual from '../components/visuals/WorkflowVisual';
 import FrameworkVisual from '../components/visuals/FrameworkVisual';
 import { EdgeDiagram, IAMDiagram, HeimdallrDiagram, ZOKADiagram } from '../components/visuals/SecurityDiagrams';
@@ -283,7 +289,7 @@ function SecurityBlock({ t, learn }) {
 }
 
 function HorizontalBlock({ t, learn }) {
-  const d = t.products.horizontal;
+  const d = t.products.services;
   return (
     <div className="container">
       <div className="product-row horizontal-row">
@@ -292,7 +298,7 @@ function HorizontalBlock({ t, learn }) {
           <h3 className="product-name">{d.name}</h3>
           <p className="product-headline">{d.headline}</p>
           <p className="product-body">{d.body}</p>
-          <Link to="/horizontal" className="product-cta">{learn} <span>→</span></Link>
+          <Link to="/services" className="product-cta">{learn} <span>→</span></Link>
         </div>
         <div className="horizontal-grid reveal">
           {d.items.map((it, i) => (
@@ -330,7 +336,7 @@ function ProductsGrid({ t }) {
     { ...t.products.superapp, to: '/superapp' },
     { ...t.products.security, to: '/security' },
     { ...t.products.framework, to: '/framework' },
-    { ...t.products.horizontal, to: '/horizontal' },
+    { ...t.products.services, to: '/services' },
   ];
   return (
     <section className="section section-alt" id="products">
@@ -399,6 +405,16 @@ function Numbers({ t }) {
   );
 }
 
+const REFS_LOGOS = [
+  { name: 'Türkiye İş Bankası', img: refIsbank },
+  { name: 'Ziraat Bankası',     img: refZiraat },
+  { name: 'Maximum Mobil',      img: refMaximum },
+  { name: 'İş Faktöring',       img: refIsfaktoring },
+  { name: 'Figopara',           img: refFigopara },
+  { name: 'İş Portföy',         img: refIsportfoy },
+];
+const REFS_TEXT = ['İş Yatırım', 'Pazarama', 'ProEmtia', 'ProSevkiyat', 'NAYS'];
+
 // ----- References -----
 function References({ t }) {
   return (
@@ -409,13 +425,17 @@ function References({ t }) {
           <h3 className="section-title reveal" style={{ marginTop: 16, fontSize: 'clamp(24px, 3vw, 40px)', transitionDelay: '.05s' }}>{t.refs.title}</h3>
         </div>
         <div className="refs-grid reveal" style={{ transitionDelay: '.1s' }}>
-          {Array.from({ length: 12 }).map((_, i) => (
-            <div key={i} className="ref-slot">
-              <span className="mono">CLIENT.{String(i + 1).padStart(2, '0')}</span>
+          {REFS_LOGOS.map((r) => (
+            <div key={r.name} className="ref-slot ref-slot--logo">
+              <img src={r.img} alt={r.name} />
+            </div>
+          ))}
+          {REFS_TEXT.map((name) => (
+            <div key={name} className="ref-slot ref-slot--text">
+              <span>{name}</span>
             </div>
           ))}
         </div>
-        <div className="refs-note mono">{t.refs.note}</div>
       </div>
     </section>
   );
