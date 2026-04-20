@@ -1,15 +1,22 @@
-import StudioVisual from './StudioVisual';
+import studioImg from '../../assets/studio-preview.png';
+import SuperAppPhones from './SuperAppPhones';
 import WorkflowVisual from './WorkflowVisual';
-import SuperAppVisual from './SuperAppVisual';
 import FrameworkVisual from './FrameworkVisual';
 import SecurityHeroAnimation from './SecurityHeroAnimation';
 
 export default function ProductHeroVisual({ slug }) {
-  if (slug === 'studio')   return <StudioVisual />;
-  if (slug === 'workflow') return <WorkflowVisual />;
-  if (slug === 'superapp') return <SuperAppVisual />;
+  if (slug === 'studio') return (
+    <img
+      src={studioImg}
+      alt="Plateau Studio"
+      className="studio-screenshot"
+    />
+  );
+  if (slug === 'superapp') return <SuperAppPhones />;
+  if (slug === 'workflow')  return <WorkflowVisual />;
+  if (slug === 'superapp')  return <SuperAppVisual />;
   if (slug === 'framework') return <FrameworkVisual />;
-  if (slug === 'security') return <SecurityHeroAnimation />;
+  if (slug === 'security')  return <SecurityHeroAnimation />;
 
   // horizontal
   return (

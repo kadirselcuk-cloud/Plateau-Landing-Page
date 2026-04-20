@@ -69,31 +69,6 @@ function Features({ t, slug }) {
   );
 }
 
-function ProductCTA({ t, slug }) {
-  const meta = PRODUCT_META[slug];
-  return (
-    <section className="section p-cta">
-      <div className="container">
-        <div className="p-cta-inner">
-          <h2 className="section-title" style={{ maxWidth: '16ch' }}>{t.cta.title}</h2>
-          <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">
-            {t.nav.demo} <span className="arr">→</span>
-          </a>
-        </div>
-        <div className="p-nav">
-          <Link to={meta.prev.to} className="p-nav-link">
-            <div className="mono">← PREV</div>
-            <div className="p-nav-name">{t.nav[meta.prev.slug]}</div>
-          </Link>
-          <Link to={meta.next.to} className="p-nav-link p-nav-next">
-            <div className="mono">NEXT →</div>
-            <div className="p-nav-name">{t.nav[meta.next.slug]}</div>
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function ProductPage({ slug }) {
   const { lang, setLang, t } = useI18n();
@@ -108,7 +83,6 @@ export default function ProductPage({ slug }) {
       <Nav lang={lang} setLang={setLang} t={t} />
       <ProductHero t={t} slug={slug} />
       <Features t={t} slug={slug} />
-      <ProductCTA t={t} slug={slug} />
       <Footer t={t} />
     </>
   );

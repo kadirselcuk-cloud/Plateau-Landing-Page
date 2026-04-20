@@ -59,9 +59,9 @@ export const PLATEAU_I18N = {
       superapp: {
         tag: "03 · EKOSİSTEM",
         name: "Plateau SuperApp",
-        headline: "Mobil uygulamanızı bir ekosisteme dönüştürün.",
-        body: "İş ortaklarınızın mini uygulamalarla müşteri tabanınıza ulaşabildiği bir süper uygulama altyapısı. Tek giriş, tek kimlik, paylaşılan deneyim.",
-        bullets: ["Mini uygulama SDK'sı", "Ortak kimlik ve ödeme", "Vitrin yönetimi", "Detaylı analitik"]
+        headline: "Mobil uygulamanızı iş ortaklarınıza açık bir platforma dönüştürün.",
+        body: "Plateau SuperApp; iş ortaklarınızın mini uygulamalarını kendi müşteri tabanınızda çalıştırmasını sağlayan kurumsal süper uygulama altyapısıdır. İş ortakları günler içinde entegre olur, kullanıcılar kesintisiz bir deneyim yaşar.",
+        bullets: ["Partner Portal & self-servis onboarding", "Birleşik kimlik & SSO", "Ortak ödeme altyapısı", "Vitrin & uygulama keşfi", "Gerçek zamanlı ekosistem analitiği"]
       },
       security: {
         tag: "04 · GÜVENLİK",
@@ -157,13 +157,13 @@ export const PLATEAU_I18N = {
         ]
       },
       superapp: {
-        hero: "Mobil uygulamanızı iş ortaklarınızın da yaşadığı bir ekosisteme çevirin.",
-        body: "Plateau SuperApp, tek kimlik ve tek cüzdan üzerinde iş ortağı mini uygulamalarını barındıran mobil altyapıdır.",
+        hero: "Mini uygulama pazarı kurun — iş ortaklarınız müşterilerinize doğrudan ulaşsın.",
+        body: "Plateau SuperApp; partner onboarding iş akışlarından çalışma zamanı izolasyonuna, derin bağlantıdan gelir paylaşımına kadar kurumsal ölçekte bir mini uygulama ekosistemi çalıştırmak için ihtiyaç duyduğunuz her şeyi sunar.",
         features: [
-          { name: "Mini App SDK", body: "Ortakların hızlı ve güvenli şekilde entegre olduğu SDK." },
-          { name: "Ortak kimlik", body: "Kullanıcı tek oturumla tüm mini uygulamalara erişir." },
-          { name: "Ortak ödeme", body: "Paylaşımlı ödeme altyapısı, tek tıkla satın alma." },
-          { name: "Analitik", body: "Ekosistem genelinde davranış ve dönüşüm analitiği." }
+          { name: "Partner Portal", body: "İş ortaklarının mini uygulamalarını kayıt ettirebildiği, gönderdiği ve yönettiği self-servis portal. Onay iş akışları ve versiyon yönetimi dahil." },
+          { name: "Mini-App SDK", body: "Hazır UI bileşenleri, navigasyon ve derin bağlantı desteği sunan hafif SDK. İş ortakları aylarca beklemeden günler içinde entegre olur." },
+          { name: "Birleşik Kimlik & Cüzdan", body: "Her mini uygulamada tek oturum ve tek cüzdan. Kullanıcılar kimlik ve ödeme bilgilerini ekosistem genelinde kesintisiz taşır." },
+          { name: "Ekosistem Analitiği", body: "Kullanım, dönüşüm ve gelir için gerçek zamanlı panolar — hem platform geneli hem de her iş ortağı için ayrı ayrı izleme." }
         ]
       },
       security: {
@@ -255,9 +255,9 @@ export const PLATEAU_I18N = {
       superapp: {
         tag: "03 · ECOSYSTEM",
         name: "Plateau SuperApp",
-        headline: "Turn your mobile app into an ecosystem.",
-        body: "A super app framework where your business partners reach your customer base through mini-apps. One identity, one wallet, shared experience.",
-        bullets: ["Mini-app SDK", "Shared identity & payments", "Storefront controls", "Deep analytics"]
+        headline: "Turn your mobile app into a platform your partners build on.",
+        body: "Plateau SuperApp is the enterprise infrastructure for running a mini-app ecosystem. Partners onboard in days, not months. Users get one login, one wallet, one seamless experience across every mini-app.",
+        bullets: ["Partner Portal & self-serve onboarding", "Unified identity & SSO", "Shared payment rails", "Storefront & app discovery", "Real-time ecosystem analytics"]
       },
       security: {
         tag: "04 · SECURITY",
@@ -353,13 +353,13 @@ export const PLATEAU_I18N = {
         ]
       },
       superapp: {
-        hero: "Turn your mobile app into an ecosystem your partners live inside.",
-        body: "Plateau SuperApp hosts partner mini-apps on a shared identity and wallet.",
+        hero: "Run a mini-app marketplace — let partners reach your customers directly.",
+        body: "Plateau SuperApp gives you everything you need to operate an enterprise-grade mini-app ecosystem: partner onboarding workflows, runtime isolation, deep linking, and revenue sharing — all in one platform.",
         features: [
-          { name: "Mini-app SDK", body: "A fast and secure SDK for partners to onboard." },
-          { name: "Shared identity", body: "One session across every mini-app." },
-          { name: "Shared payments", body: "Unified payment rails, one-tap purchase." },
-          { name: "Analytics", body: "Behavior and conversion insights across the ecosystem." }
+          { name: "Partner Portal", body: "Self-service portal where partners register, submit, and manage mini-apps. Built-in approval workflows, versioning, and compliance checks." },
+          { name: "Mini-App SDK", body: "Lightweight SDK with pre-built UI components, navigation primitives, and deep-link support. Partners ship in days, not months." },
+          { name: "Unified Identity & Wallet", body: "One session and one wallet across every mini-app. Users carry their credentials and payment methods seamlessly across the entire ecosystem." },
+          { name: "Ecosystem Analytics", body: "Real-time dashboards covering usage, conversion, and revenue — both platform-wide and per partner, with drill-down reporting." }
         ]
       },
       security: {

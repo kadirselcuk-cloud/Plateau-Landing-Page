@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Brand from './Brand';
+import { DEMO_URL } from '../i18n';
 
 const SOFTTECH_LOGO = 'https://www.softtech.com.tr/dosyalar/header/companyLogo.svg';
 const SOFTTECH_URL  = 'https://www.softtech.com.tr';
@@ -12,8 +13,16 @@ export default function Footer({ t }) {
         <div className="footer-top">
 
           <div className="footer-about">
-            <Brand />
+            <Brand variant="white" />
             <p>{t.footer.about}</p>
+            <div className="footer-cta">
+              <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">
+                {t.cta.primary} <span className="arr">→</span>
+              </a>
+              <a href={SOFTTECH_URL} target="_blank" rel="noopener" className="btn btn-ghost btn-ghost-dark">
+                {t.cta.secondary} <span className="arr">↗</span>
+              </a>
+            </div>
           </div>
 
           <div className="footer-col">

@@ -98,23 +98,55 @@ img { max-width: 100%; display: block; }
   gap: 24px;
 }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; letter-spacing: -0.01em; }
-.brand-mark {
-  width: 22px; height: 22px;
-  background: var(--red);
-  border-radius: 4px;
-  position: relative;
-  display: inline-block;
-}
-.brand-mark::after {
-  content: ""; position: absolute; inset: 4px 4px 9px 4px;
-  border-top: 2px solid white; border-right: 2px solid white;
-  transform: rotate(45deg); transform-origin: center;
-  border-radius: 1px;
-}
+.brand-mark { display: flex; align-items: center; }
 .nav-links { display: flex; gap: 26px; font-size: 14px; color: var(--text-2); }
 .nav-links a { padding: 6px 0; position: relative; transition: color .2s; }
 .nav-links a:hover { color: var(--text); }
 .nav-right { display: flex; align-items: center; gap: 16px; }
+
+/* ---------- Studio screenshot ---------- */
+.studio-screenshot {
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 40px rgba(21,18,51,0.10);
+}
+
+/* ---------- SuperApp phones ---------- */
+.superapp-phones {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  width: 100%;
+}
+.phone-wrap {
+  position: relative;
+  flex: 1;
+  aspect-ratio: 407 / 781;
+}
+/* Mini-app screenshot sits inside the phone screen area */
+.phone-screen {
+  position: absolute;
+  top: 1.8%;
+  left: 3.2%;
+  right: 3.2%;
+  bottom: 1.8%;
+  width: 88%;
+  height: 88%;
+  padding: 8px 0px 5px 10px;
+  object-fit: cover;
+  object-position: top;
+  z-index: 1;
+}
+/* Phone frame sits on top */
+.phone-frame {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  pointer-events: none;
+}
 
 /* ---------- Nav dropdown ---------- */
 .nav-dropdown { position: relative; }
@@ -271,12 +303,14 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
 .footer-about .brand { color: white; }
-.footer-about .brand-mark::after { border-color: white; }
 .footer-about p { color: rgba(255,255,255,0.62); font-size: 14px; line-height: 1.55; max-width: 38ch; margin-top: 20px; }
 .footer-col h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin: 0 0 18px; font-weight: 500; }
 .footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
 .footer-col a { font-size: 14px; color: rgba(255,255,255,0.85); transition: color .2s; }
 .footer-col a:hover { color: var(--red); }
+
+/* Footer CTA buttons */
+.footer-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 
 /* Softtech logo */
 .footer-softtech-logo { display: inline-block; margin-bottom: 24px; }

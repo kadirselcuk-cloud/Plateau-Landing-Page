@@ -309,7 +309,7 @@
 .viz-superapp { display: grid; grid-template-columns: 220px 1fr; gap: 24px; align-items: center; }
 .phone { width: 220px; aspect-ratio: 220/440; background: var(--navy); border-radius: 30px; padding: 8px; position: relative; box-shadow: 0 30px 60px -30px rgba(21,18,51,0.4); }
 .phone-notch { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); width: 70px; height: 16px; background: black; border-radius: 10px; z-index: 2; }
-.phone-screen { background: linear-gradient(180deg, #1a1645 0%, #151233 100%); width: 100%; height: 100%; border-radius: 22px; padding: 28px 14px 14px; color: white; display: flex; flex-direction: column; gap: 12px; overflow: hidden; }
+.phone-screen { width: 88%; height: 88%; padding: 8px 0px 5px 10px; color: white; display: flex; flex-direction: column; gap: 12px; overflow: hidden; }
 .phone-head { display: flex; justify-content: space-between; align-items: center; padding: 4px 4px 0; }
 .ph-logo { display: flex; align-items: center; }
 .ph-title { font-size: 13px; font-weight: 600; }

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90">
+  <!-- Bottom-left square -->
+  <rect x="0" y="30" width="60" height="60" fill="#FD454C"/>
+  <!-- Top D-shape: rectangle + right semicircle -->
+  <path d="M 30 0 H 60 A 30 30 0 0 1 60 60 H 30 Z" fill="#FD454C"/>
+  <!-- White cutout at overlap -->
+  <rect x="30" y="30" width="30" height="30" fill="white"/>
+</svg>

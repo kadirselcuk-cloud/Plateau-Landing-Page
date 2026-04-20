@@ -6,9 +6,9 @@ import { useI18n } from '../hooks/useI18n';
 import { useReveal } from '../hooks/useReveal';
 import { useCounter } from '../hooks/useCounter';
 import { DEMO_URL } from '../i18n';
-import StudioVisual from '../components/visuals/StudioVisual';
+import studioImg from '../assets/studio-preview.png';
+import SuperAppPhones from '../components/visuals/SuperAppPhones';
 import WorkflowVisual from '../components/visuals/WorkflowVisual';
-import SuperAppVisual from '../components/visuals/SuperAppVisual';
 import FrameworkVisual from '../components/visuals/FrameworkVisual';
 import { EdgeDiagram, IAMDiagram, HeimdallrDiagram, ZOKADiagram } from '../components/visuals/SecurityDiagrams';
 import HeroAnimation from '../components/visuals/HeroAnimation';
@@ -312,16 +312,9 @@ function ProductsVertical({ t }) {
   const learn = t.products.learn_more;
   return (
     <section className="section section-alt" id="products">
-      <div className="container">
-        <div className="products-head">
-          <div className="eyebrow reveal">{t.products.eyebrow}</div>
-          <h2 className="section-title reveal" style={{ marginTop: 16, maxWidth: '18ch', transitionDelay: '.05s' }}>{t.products.title}</h2>
-          <p className="lede reveal" style={{ marginTop: 18, transitionDelay: '.1s' }}>{t.products.subtitle}</p>
-        </div>
-      </div>
-      <ProductRow data={t.products.studio}   to="/studio"   learn={learn}><StudioVisual /></ProductRow>
+      <ProductRow data={t.products.studio}   to="/studio"   learn={learn}><img src={studioImg} alt="Plateau Studio" className="studio-screenshot" /></ProductRow>
       <ProductRow data={t.products.workflow}  to="/workflow"  learn={learn} side="right"><WorkflowVisual /></ProductRow>
-      <ProductRow data={t.products.superapp}  to="/superapp"  learn={learn}><SuperAppVisual /></ProductRow>
+      <ProductRow data={t.products.superapp}  to="/superapp"  learn={learn}><SuperAppPhones /></ProductRow>
       <SecurityBlock t={t} learn={learn} />
       <ProductRow data={t.products.framework} to="/framework" learn={learn} side="right"><FrameworkVisual /></ProductRow>
       <HorizontalBlock t={t} learn={learn} />
@@ -451,27 +444,6 @@ function Testimonials({ t }) {
   );
 }
 
-// ----- CTA -----
-function CTA({ t }) {
-  return (
-    <section className="section cta-section">
-      <div className="container">
-        <div className="cta-inner">
-          <div>
-            <div className="eyebrow" style={{ color: 'rgba(255,255,255,0.7)' }}>{t.cta.eyebrow}</div>
-            <h2 className="section-title reveal" style={{ color: 'white', marginTop: 18, maxWidth: '18ch' }}>{t.cta.title}</h2>
-            <p className="lede reveal" style={{ marginTop: 20, color: 'rgba(255,255,255,0.72)', transitionDelay: '.05s' }}>{t.cta.body}</p>
-          </div>
-          <div className="cta-actions reveal" style={{ transitionDelay: '.1s' }}>
-            <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">{t.cta.primary} <span className="arr">→</span></a>
-            <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-ghost btn-ghost-dark">{t.cta.secondary} <span className="arr">↗</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 // ----- Page -----
 export default function LandingPage() {
   const { lang, setLang, t } = useI18n();
@@ -495,7 +467,6 @@ export default function LandingPage() {
       <Numbers t={t} />
       <References t={t} />
       <Testimonials t={t} />
-      <CTA t={t} />
       <Footer t={t} />
       <TweaksPanel v={v} update={update} open={open} />
     </>
