@@ -5,7 +5,9 @@
       "Bash(node_modules/.bin/vite build *)",
       "Bash(where node *)",
       "Bash(npm run *)",
-      "WebFetch(domain:www.softtech.com.tr)"
+      "WebFetch(domain:www.softtech.com.tr)",
+      "Bash(git rm *)",
+      "Bash(git push *)"
     ]
   }
 }
