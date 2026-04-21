@@ -264,8 +264,8 @@
 .ref-slot--dark:hover { background: var(--navy-2); }
 .ref-slot--text span { font-size: 13px; font-weight: 600; color: var(--text-2); text-align: center; letter-spacing: -0.01em; }
 
-@media (max-width: 900px) { .refs-grid { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 560px) { .refs-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 900px) { .refs-grid { grid-template-columns: repeat(3, 1fr); } .ref-slot { padding: 14px 16px; } .ref-slot--logo img { max-height: 34px; } }
+@media (max-width: 560px) { .refs-grid { grid-template-columns: repeat(2, 1fr); } .ref-slot { padding: 10px 12px; } .ref-slot--logo img { max-height: 28px; } }
 
 /* ---------- Testimonials ---------- */
 .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 60px; }
