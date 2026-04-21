@@ -95,7 +95,7 @@ window.PLATEAU_I18N = {
     },
     numbers: {
       eyebrow: "RAKAMLARLA PLATEAU",
-      title: "Ölçek, güven ve süreklilik.",
+      title: "Üretken, Ölçeklenebilir ve Güvenli.",
       stats: [
         { value: "120+", label: "Kurumsal müşteri", note: "örnek değer" },
         { value: "40M+", label: "Aktif son kullanıcı", note: "örnek değer" },

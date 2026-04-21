@@ -488,7 +488,7 @@ function Numbers({ t }) {
       <div className="container">
         <div className="numbers-head">
           <div className="eyebrow reveal">{t.numbers.eyebrow}</div>
-          <h2 className="section-title reveal" style={{ marginTop: 16, maxWidth: '20ch', transitionDelay: '.05s' }}>{t.numbers.title}</h2>
+          <h2 className="section-title reveal" style={{ marginTop: 16, maxWidth: 'none', transitionDelay: '.05s' }}>{t.numbers.title}</h2>
         </div>
         <div className="stats-grid">
           {t.numbers.stats.map((s, i) => <Stat key={i} s={s} />)}

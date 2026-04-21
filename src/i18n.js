@@ -97,7 +97,7 @@ export const PLATEAU_I18N = {
     },
     numbers: {
       eyebrow: "RAKAMLARLA PLATEAU",
-      title: "Ölçek, güven ve süreklilik.",
+      title: "Üretken, Ölçeklenebilir ve Güvenli.",
       stats: [
         { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
         { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
