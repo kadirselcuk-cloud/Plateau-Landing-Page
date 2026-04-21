@@ -31,7 +31,7 @@ export const PLATEAU_I18N = {
       meta_3: "Üretken"
     },
     intro: {
-      eyebrow: "PLATEAU PLATFORMU",
+      eyebrow: "PLATEAU PLATFORM",
       title: "Tek bir platform. Yazılımın her katmanı.",
       body: "Plateau; Verimlilik, Yenilikçilik, Ölçeklenebilirlik, Güvenlik ve Kalite olmak üzere 5 temel değer göz önünde bulundurularak geliştirilmiştir. Ekiplerinizi kesintisiz ve kolay bir dijital dönüşüm için güçlendirir.",
       pills: ["Tasarım", "Workflow", "SuperApp", "Güvenlik", "Framework", "Servisler", "Yapay Zeka"],
@@ -100,7 +100,7 @@ export const PLATEAU_I18N = {
       title: "Ölçek, güven ve süreklilik.",
       stats: [
         { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
-        { value: "1.350+", label: "Aktif mikroservis", note: "Plateau Framework" },
+        { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
         { value: "150M+", label: "Aylık BFF işlemi", note: "Plateau Studio" },
         { value: "40M+", label: "Yıllık iş akışı", note: "Plateau Workflow" }
       ]
@@ -229,7 +229,7 @@ export const PLATEAU_I18N = {
       meta_3: "Productive"
     },
     intro: {
-      eyebrow: "THE PLATEAU PLATFORM",
+      eyebrow: "PLATEAU PLATFORM",
       title: "One platform. Every layer of software.",
       body: "Plateau is built on five core values: Productivity, Innovation, Scalability, Security and Quality. Its mission is to empower organizations to achieve seamless and effortless digital transformation.",
       pills: ["Design", "Workflow", "SuperApp", "Security", "Framework", "Services", "AI"],
@@ -298,7 +298,7 @@ export const PLATEAU_I18N = {
       title: "Scale, trust, continuity.",
       stats: [
         { value: "15M+", label: "Customers secured", note: "Plateau Security" },
-        { value: "1,350+", label: "Active microservices", note: "Plateau Framework" },
+        { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
         { value: "150M+", label: "Monthly BFF transactions", note: "Plateau Studio" },
         { value: "40M+", label: "Workflows per year", note: "Plateau Workflow" }
       ]

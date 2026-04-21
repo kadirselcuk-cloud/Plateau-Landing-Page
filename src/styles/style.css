@@ -82,6 +82,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Layout ---------- */
 .container { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
 .section { padding: clamp(80px, 10vw, 160px) 0; position: relative; }
+#platform { padding-top: clamp(40px, 4vw, 60px); }
 .section + .section { border-top: 1px solid var(--line); }
 
 /* ---------- Nav ---------- */

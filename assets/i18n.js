@@ -30,7 +30,7 @@ window.PLATEAU_I18N = {
       meta_3: "Üretken"
     },
     intro: {
-      eyebrow: "PLATEAU PLATFORMU",
+      eyebrow: "PLATEAU PLATFORM",
       title: "Tek bir platform. Yazılımın her katmanı.",
       body: "Plateau; arayüz tasarımı, iş akışı otomasyonu, mobil ekosistem, güvenlik, mikroservis mimarisi ve operasyonel araçları tek bir bütün olarak sunar. Ekipleriniz hızlanır, riskler azalır, ölçek büyür.",
       pills: ["Tasarım", "Geliştirme", "Güvenlik", "Dağıtım", "Gözlemlenebilirlik", "Yapay Zeka"],
@@ -229,7 +229,7 @@ window.PLATEAU_I18N = {
       meta_3: "Productive"
     },
     intro: {
-      eyebrow: "THE PLATEAU PLATFORM",
+      eyebrow: "PLATEAU PLATFORM",
       title: "One platform. Every layer of software.",
       body: "Plateau unifies UI design, workflow automation, mobile ecosystems, security, microservice architecture and operational tooling into a single, coherent system. Teams move faster, risks drop, scale compounds.",
       pills: ["Design", "Development", "Security", "Delivery", "Observability", "AI"],
