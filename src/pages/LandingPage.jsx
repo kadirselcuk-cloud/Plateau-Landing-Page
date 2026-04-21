@@ -580,7 +580,7 @@ export default function LandingPage() {
       <Numbers t={t} />
       <References t={t} />
       <Testimonials t={t} />
-      <Footer t={t} />
+      <Footer t={t} lang={lang} />
       <TweaksPanel v={v} update={update} open={open} />
     </>
   );

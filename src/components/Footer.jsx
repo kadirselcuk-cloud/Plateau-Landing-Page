@@ -4,9 +4,10 @@ import { DEMO_URL } from '../i18n';
 
 const SOFTTECH_LOGO = 'https://www.softtech.com.tr/dosyalar/header/companyLogo.svg';
 const SOFTTECH_URL  = 'https://www.softtech.com.tr';
+const PLATEAU_URL   = { tr: 'https://softtech.com.tr/urun/plateau', en: 'https://softtech.com.tr/en/product/plateau' };
 const PRODUCT_SLUGS = ['studio', 'workflow', 'superapp', 'security', 'framework', 'services'];
 
-export default function Footer({ t }) {
+export default function Footer({ t, lang }) {
   return (
     <footer className="footer" id="footer">
       <div className="footer-inner">
@@ -19,7 +20,7 @@ export default function Footer({ t }) {
               <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">
                 {t.cta.primary} <span className="arr">→</span>
               </a>
-              <a href={SOFTTECH_URL} target="_blank" rel="noopener" className="btn btn-ghost btn-ghost-dark">
+              <a href={PLATEAU_URL[lang]} target="_blank" rel="noopener" className="btn btn-ghost btn-ghost-dark">
                 {t.cta.secondary} <span className="arr">↗</span>
               </a>
             </div>

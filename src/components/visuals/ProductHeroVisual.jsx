@@ -1,5 +1,6 @@
 import studioImg from '../../assets/studio-preview.png';
 import heroVideo from '../../assets/plateau-hero.mp4';
+import frameworkVideo from '../../assets/framework-hero.mp4';
 import SuperAppPhones from './SuperAppPhones';
 import SecurityHeroAnimation from './SecurityHeroAnimation';
 import {
@@ -61,9 +62,14 @@ export default function ProductHeroVisual({ slug }) {
     <img src={studioImg} alt="Plateau Studio" className="studio-screenshot" />
   );
   if (slug === 'superapp')  return <SuperAppPhones />;
-  if (slug === 'workflow' || slug === 'framework') return (
+  if (slug === 'workflow') return (
     <div style={{ position: 'relative', width: '100%', borderRadius: 'var(--radius)', overflow: 'hidden', aspectRatio: '16/9' }}>
       <video src={heroVideo} autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+    </div>
+  );
+  if (slug === 'framework') return (
+    <div style={{ position: 'relative', width: '80%', margin: '0 auto', borderRadius: 'var(--radius)', overflow: 'hidden' }}>
+      <video src={frameworkVideo} autoPlay muted loop playsInline style={{ width: '100%', height: 'auto', display: 'block' }} />
     </div>
   );
   if (slug === 'security')  return <SecurityHeroAnimation />;

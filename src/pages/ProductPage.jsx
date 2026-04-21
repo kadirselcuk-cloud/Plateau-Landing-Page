@@ -112,7 +112,7 @@ export default function ProductPage({ slug }) {
       <Nav lang={lang} setLang={setLang} t={t} />
       <ProductHero t={t} slug={slug} />
       <Features t={t} slug={slug} />
-      <Footer t={t} />
+      <Footer t={t} lang={lang} />
     </>
   );
 }
