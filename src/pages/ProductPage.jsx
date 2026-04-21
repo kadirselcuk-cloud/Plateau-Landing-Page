@@ -52,6 +52,11 @@ function ProductHero({ t, slug }) {
               <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">
                 {t.nav.demo} <span className="arr">→</span>
               </a>
+              {slug === 'studio' && (
+                <a href="https://studio.onplateau.com/" target="_blank" rel="noopener" className="btn btn-dark">
+                  studio.onplateau.com <span className="arr">↗</span>
+                </a>
+              )}
             </div>
           </div>
           <div className="p-hero-visual reveal" style={{ transitionDelay: '.2s' }}>

@@ -242,7 +242,9 @@ function Intro({ t }) {
 }
 
 // ----- Products (Vertical storytelling) -----
-function ProductRow({ data, to, learn, children, side = 'left', id }) {
+const STUDIO_URL = 'https://studio.onplateau.com/';
+
+function ProductRow({ data, to, learn, children, side = 'left', id, cta2 }) {
   return (
     <div className="container" id={id}>
       <div className={`product-row ${side}`}>
@@ -257,6 +259,7 @@ function ProductRow({ data, to, learn, children, side = 'left', id }) {
             </ul>
           )}
           <Link to={to} className="product-cta">{learn} <span>→</span></Link>
+          {cta2 && <a href={cta2.href} target="_blank" rel="noopener" className="product-cta" style={{ marginLeft: 24 }}>{cta2.label} <span>↗</span></a>}
         </div>
         <div className="product-visual reveal">{children}</div>
       </div>
@@ -408,7 +411,7 @@ function ProductsVertical({ t }) {
   const learn = t.products.learn_more;
   return (
     <section className="section section-alt" id="products">
-      <ProductRow data={t.products.studio}   to="/studio"   learn={learn} id="studio"><img src={studioImg} alt="Plateau Studio" className="studio-screenshot" /></ProductRow>
+      <ProductRow data={t.products.studio}   to="/studio"   learn={learn} id="studio" cta2={{ href: STUDIO_URL, label: 'studio.onplateau.com' }}><img src={studioImg} alt="Plateau Studio" className="studio-screenshot" /></ProductRow>
       <WorkflowBlock t={t} learn={learn} />
       <ProductRow data={t.products.superapp}  to="/superapp"  learn={learn} id="superapp"><SuperAppPhones /></ProductRow>
       <SecurityBlock t={t} learn={learn} />
