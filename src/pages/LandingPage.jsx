@@ -8,16 +8,19 @@ import { useCounter } from '../hooks/useCounter';
 import { DEMO_URL } from '../i18n';
 import studioImg from '../assets/studio-preview.png';
 import SuperAppPhones from '../components/visuals/SuperAppPhones';
-import refIsbank      from '../assets/refs/isbank.png';
+import refIsbank      from '../assets/refs/isbank.svg';
 import refZiraat      from '../assets/refs/ziraat.gif';
 import refMaximum     from '../assets/refs/maximum.svg';
 import refIsfaktoring from '../assets/refs/isfaktoring.svg';
 import refFigopara    from '../assets/refs/figopara.svg';
+import refProemtia    from '../assets/refs/proemtia.svg';
+import refProsevkiyat from '../assets/refs/prosevkiyat.svg';
+import refIsyatirim   from '../assets/refs/isyatirim.svg';
 import refIsportfoy   from '../assets/refs/isportfoy.gif';
-import WorkflowVisual from '../components/visuals/WorkflowVisual';
-import FrameworkVisual from '../components/visuals/FrameworkVisual';
-import { EdgeDiagram, IAMDiagram, HeimdallrDiagram, ZOKADiagram } from '../components/visuals/SecurityDiagrams';
-import HeroAnimation from '../components/visuals/HeroAnimation';
+import refPazarama    from '../assets/refs/pazarama.jpg';
+import refNays        from '../assets/refs/nays.webp';
+import refIserisim    from '../assets/refs/iserisim.jpg';
+import { Shield, KeyRound, Fingerprint, ShieldAlert, MousePointer2, Users, Zap, Server, Terminal, Network, Wand2, Gauge, DatabaseZap, BarChart3, FileText, Bell, GitBranch, FlaskConical, Sparkles, Calendar } from 'lucide-react';
 
 // ----- TWEAKS (editable defaults) -----
 const TWEAKS = {
@@ -100,7 +103,13 @@ function TweaksPanel({ v, update, open }) {
 function HeroGeometry() {
   return (
     <div className="hero-geo" aria-hidden>
-      <HeroAnimation />
+      <iframe
+        src="https://www.youtube.com/embed/aDyymQMdJYI?autoplay=1&mute=1&loop=1&playlist=aDyymQMdJYI&controls=0&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+      />
+      <div style={{ position: 'absolute', inset: 0, zIndex: 1 }} />
     </div>
   );
 }
@@ -182,12 +191,12 @@ function HeroConstellation({ t }) {
 // ----- Intro / Platform -----
 function PlatformDiagram({ t }) {
   const layers = [
-    { name: 'Plateau Studio',        role: 'Design',              kind: 'design'    },
-    { name: 'Plateau Workflow',       role: 'Automation',          kind: 'design'    },
-    { name: 'Plateau SuperApp',       role: 'Ecosystem',           kind: 'design'    },
-    { name: 'Plateau Security Suite', role: 'Defense · 4 modules', kind: 'security'  },
-    { name: 'Plateau Framework',      role: 'Java · .NET',         kind: 'core'      },
-    { name: t.intro.platform_horizontal, role: 'Docs · DevOps · Test', kind: 'horizontal' },
+    { name: 'Plateau Studio',           role: 'Design',              kind: 'design',     anchor: 'studio'    },
+    { name: 'Plateau Workflow',          role: 'Automation',          kind: 'design',     anchor: 'workflow'  },
+    { name: 'Plateau SuperApp',          role: 'Ecosystem',           kind: 'design',     anchor: 'superapp'  },
+    { name: 'Plateau Security Suite',    role: 'Defense · 4 modules', kind: 'security',   anchor: 'security'  },
+    { name: 'Plateau Framework',         role: 'Java · .NET',         kind: 'core',       anchor: 'framework' },
+    { name: t.intro.platform_horizontal, role: 'Docs · DevOps · Test', kind: 'horizontal', anchor: 'services'  },
   ];
   return (
     <div className="platform-diagram reveal" style={{ transitionDelay: '.2s' }}>
@@ -197,11 +206,11 @@ function PlatformDiagram({ t }) {
       </div>
       <div className="pd-layers">
         {layers.map((l, i) => (
-          <div key={i} className={`pd-layer pd-${l.kind}`}>
+          <Link key={i} to={`/#${l.anchor}`} className={`pd-layer pd-${l.kind}`}>
             <div className="pd-num">{String(i + 1).padStart(2, '0')}</div>
             <div className="pd-name">{l.name}</div>
             <div className="pd-role">{l.role}</div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -231,9 +240,9 @@ function Intro({ t }) {
 }
 
 // ----- Products (Vertical storytelling) -----
-function ProductRow({ data, to, learn, children, side = 'left' }) {
+function ProductRow({ data, to, learn, children, side = 'left', id }) {
   return (
-    <div className="container">
+    <div className="container" id={id}>
       <div className={`product-row ${side}`}>
         <div className="product-copy reveal">
           <div className="product-tag">{data.tag}</div>
@@ -257,8 +266,9 @@ function SecurityBlock({ t, learn }) {
   const d = t.products.security;
   const sub = d.subproducts;
   const items = [sub.edge, sub.iam, sub.heimdallr, sub.zoka];
+  const icons = [Shield, KeyRound, Fingerprint, ShieldAlert];
   return (
-    <div className="container">
+    <div className="container" id="security">
       <div className="product-row security-row">
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
@@ -268,30 +278,109 @@ function SecurityBlock({ t, learn }) {
           <Link to="/security" className="product-cta">{learn} <span>→</span></Link>
         </div>
         <div className="security-grid reveal">
-          {items.map((it, i) => (
-            <div key={i} className="security-card">
-              <div className="security-num">0{i + 1}</div>
-              <div className="security-name">{it.name}</div>
-              <div className="security-role">{it.role}</div>
-              <p className="security-body">{it.body}</p>
-              <div className="security-diagram" aria-hidden>
-                {i === 0 && <EdgeDiagram />}
-                {i === 1 && <IAMDiagram />}
-                {i === 2 && <HeimdallrDiagram />}
-                {i === 3 && <ZOKADiagram />}
+          {items.map((it, i) => {
+            const Icon = icons[i];
+            return (
+              <div key={i} className="security-card">
+                <div className="security-num">0{i + 1}</div>
+                <div className="security-name">{it.name}</div>
+                <div className="security-role">{it.role}</div>
+                <p className="security-body">{it.body}</p>
+                <div className="security-icon" aria-hidden>
+                  <Icon size={36} strokeWidth={1.3} color="var(--red)" />
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
   );
 }
 
+function WorkflowBlock({ t, learn }) {
+  const d = t.products.workflow;
+  const features = t.pages.workflow.features;
+  const icons = [MousePointer2, Users, Zap, Server];
+  return (
+    <div className="container" id="workflow">
+      <div className="product-row security-row">
+        <div className="product-copy reveal">
+          <div className="product-tag">{d.tag}</div>
+          <h3 className="product-name">{d.name}</h3>
+          <p className="product-headline">{d.headline}</p>
+          <p className="product-body">{d.body}</p>
+          <Link to="/workflow" className="product-cta">{learn} <span>→</span></Link>
+        </div>
+        <div className="security-grid reveal">
+          {features.map((f, i) => {
+            const Icon = icons[i];
+            return (
+              <div key={i} className="security-card">
+                <div className="security-num">0{i + 1}</div>
+                <div className="security-name">{f.name}</div>
+                <p className="security-body">{f.body}</p>
+                <div className="security-icon" aria-hidden>
+                  <Icon size={36} strokeWidth={1.3} color="var(--red)" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FrameworkBlock({ t, learn }) {
+  const d = t.products.framework;
+  const features = t.pages.framework.features;
+  const icons = [Terminal, Network, Wand2, Gauge];
+  return (
+    <div className="container" id="framework">
+      <div className="product-row security-row">
+        <div className="product-copy reveal">
+          <div className="product-tag">{d.tag}</div>
+          <h3 className="product-name">{d.name}</h3>
+          <p className="product-headline">{d.headline}</p>
+          <p className="product-body">{d.body}</p>
+          <Link to="/framework" className="product-cta">{learn} <span>→</span></Link>
+        </div>
+        <div className="security-grid reveal">
+          {features.map((f, i) => {
+            const Icon = icons[i];
+            return (
+              <div key={i} className="security-card">
+                <div className="security-num">0{i + 1}</div>
+                <div className="security-name">{f.name}</div>
+                <p className="security-body">{f.body}</p>
+                <div className="security-icon" aria-hidden>
+                  <Icon size={36} strokeWidth={1.3} color="var(--red)" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const SERVICES_MINI = [
+  { label: 'Eventstore',       Icon: DatabaseZap  },
+  { label: 'Raporlama',        Icon: BarChart3     },
+  { label: 'Doküman Yönetimi', Icon: FileText      },
+  { label: 'Bildirim',         Icon: Bell          },
+  { label: 'DevOps',           Icon: GitBranch     },
+  { label: 'Test Otomasyonu',  Icon: FlaskConical  },
+  { label: 'AI Araçları',      Icon: Sparkles      },
+  { label: 'Zamanlayıcı',      Icon: Calendar      },
+];
+
 function HorizontalBlock({ t, learn }) {
   const d = t.products.services;
   return (
-    <div className="container">
+    <div className="container" id="services">
       <div className="product-row horizontal-row">
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
@@ -300,12 +389,11 @@ function HorizontalBlock({ t, learn }) {
           <p className="product-body">{d.body}</p>
           <Link to="/services" className="product-cta">{learn} <span>→</span></Link>
         </div>
-        <div className="horizontal-grid reveal">
-          {d.items.map((it, i) => (
-            <div key={i} className="hz-card">
-              <div className="hz-name">{it.name}</div>
-              <p className="hz-body">{it.body}</p>
-              <div className="hz-chip">AI-assisted</div>
+        <div className="services-mini-grid reveal">
+          {SERVICES_MINI.map(({ label, Icon }) => (
+            <div key={label} className="services-mini-card">
+              <Icon size={22} strokeWidth={1.4} color="var(--red)" />
+              <div className="services-mini-name">{label}</div>
             </div>
           ))}
         </div>
@@ -318,11 +406,11 @@ function ProductsVertical({ t }) {
   const learn = t.products.learn_more;
   return (
     <section className="section section-alt" id="products">
-      <ProductRow data={t.products.studio}   to="/studio"   learn={learn}><img src={studioImg} alt="Plateau Studio" className="studio-screenshot" /></ProductRow>
-      <ProductRow data={t.products.workflow}  to="/workflow"  learn={learn} side="right"><WorkflowVisual /></ProductRow>
-      <ProductRow data={t.products.superapp}  to="/superapp"  learn={learn}><SuperAppPhones /></ProductRow>
+      <ProductRow data={t.products.studio}   to="/studio"   learn={learn} id="studio"><img src={studioImg} alt="Plateau Studio" className="studio-screenshot" /></ProductRow>
+      <WorkflowBlock t={t} learn={learn} />
+      <ProductRow data={t.products.superapp}  to="/superapp"  learn={learn} id="superapp"><SuperAppPhones /></ProductRow>
       <SecurityBlock t={t} learn={learn} />
-      <ProductRow data={t.products.framework} to="/framework" learn={learn} side="right"><FrameworkVisual /></ProductRow>
+      <FrameworkBlock t={t} learn={learn} />
       <HorizontalBlock t={t} learn={learn} />
     </section>
   );
@@ -411,9 +499,14 @@ const REFS_LOGOS = [
   { name: 'Maximum Mobil',      img: refMaximum },
   { name: 'İş Faktöring',       img: refIsfaktoring },
   { name: 'Figopara',           img: refFigopara },
+  { name: 'ProEmtia',           img: refProemtia },
+  { name: 'ProSevkiyat',        img: refProsevkiyat },
+  { name: 'İş Yatırım',         img: refIsyatirim },
   { name: 'İş Portföy',         img: refIsportfoy },
+  { name: 'Pazarama',           img: refPazarama },
+  { name: 'NAYS',               img: refNays,        large: true },
+  { name: 'İş Erişim',          img: refIserisim },
 ];
-const REFS_TEXT = ['İş Yatırım', 'Pazarama', 'ProEmtia', 'ProSevkiyat', 'NAYS'];
 
 // ----- References -----
 function References({ t }) {
@@ -426,13 +519,8 @@ function References({ t }) {
         </div>
         <div className="refs-grid reveal" style={{ transitionDelay: '.1s' }}>
           {REFS_LOGOS.map((r) => (
-            <div key={r.name} className="ref-slot ref-slot--logo">
-              <img src={r.img} alt={r.name} />
-            </div>
-          ))}
-          {REFS_TEXT.map((name) => (
-            <div key={name} className="ref-slot ref-slot--text">
-              <span>{name}</span>
+            <div key={r.name} className={`ref-slot ref-slot--logo${r.dark ? ' ref-slot--dark' : ''}`}>
+              <img src={r.img} alt={r.name} style={r.large ? { maxHeight: 60 } : undefined} />
             </div>
           ))}
         </div>

@@ -6,6 +6,23 @@ import { useI18n } from '../hooks/useI18n';
 import { useReveal } from '../hooks/useReveal';
 import { DEMO_URL } from '../i18n';
 import ProductHeroVisual from '../components/visuals/ProductHeroVisual';
+import {
+  Layout, GitBranch, Sparkles, Plug,
+  MousePointer2, Users, Zap, Server,
+  LayoutGrid, Code, Wallet, PieChart,
+  UserCheck, Shield, Fingerprint, ShieldAlert,
+  Terminal, Network, Wand2, Gauge,
+  DatabaseZap, BarChart3, Bell, FlaskConical,
+} from 'lucide-react';
+
+const FEATURE_ICONS = {
+  studio:    [Layout,      GitBranch,  Sparkles,    Plug],
+  workflow:  [MousePointer2, Users,    Zap,         Server],
+  superapp:  [LayoutGrid,  Code,       Wallet,      PieChart],
+  security:  [UserCheck,   Shield,     Fingerprint, ShieldAlert],
+  framework: [Terminal,    Network,    Wand2,       Gauge],
+  services:  [DatabaseZap, BarChart3,  Bell,        FlaskConical],
+};
 
 const PRODUCT_META = {
   studio:     { prev: { slug: 'services', to: '/services' }, next: { slug: 'workflow',   to: '/workflow'   } },
@@ -48,6 +65,7 @@ function ProductHero({ t, slug }) {
 
 function Features({ t, slug }) {
   const features = t.pages[slug].features;
+  const icons = FEATURE_ICONS[slug] || [];
   return (
     <section className="section">
       <div className="container">
@@ -56,13 +74,19 @@ function Features({ t, slug }) {
           {slug === 'security' ? t.products.security.headline : t.products[slug].headline}
         </h2>
         <div className="p-features">
-          {features.map((f, i) => (
-            <div key={i} className="p-feature reveal" style={{ transitionDelay: `${.05 + i * .04}s` }}>
-              <div className="p-feature-num mono">{String(i + 1).padStart(2, '0')}</div>
-              <div className="p-feature-name">{f.name}</div>
-              <p className="p-feature-body">{f.body}</p>
-            </div>
-          ))}
+          {features.map((f, i) => {
+            const Icon = icons[i];
+            return (
+              <div key={i} className="p-feature reveal" style={{ transitionDelay: `${.05 + i * .04}s` }}>
+                {Icon
+                  ? <Icon size={55} strokeWidth={1.2} color="var(--red)" className="p-feature-icon" />
+                  : <div className="p-feature-num mono">{String(i + 1).padStart(2, '0')}</div>
+                }
+                <div className="p-feature-name">{f.name}</div>
+                <p className="p-feature-body">{f.body}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

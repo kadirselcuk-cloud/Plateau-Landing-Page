@@ -3,22 +3,29 @@ import SuperAppPhones from './SuperAppPhones';
 import WorkflowVisual from './WorkflowVisual';
 import FrameworkVisual from './FrameworkVisual';
 import SecurityHeroAnimation from './SecurityHeroAnimation';
+import {
+  DatabaseZap,
+  BarChart3,
+  FileText,
+  Bell,
+  GitBranch,
+  FlaskConical,
+  Sparkles,
+  Calendar,
+} from 'lucide-react';
 
-export default function ProductHeroVisual({ slug }) {
-  if (slug === 'studio') return (
-    <img
-      src={studioImg}
-      alt="Plateau Studio"
-      className="studio-screenshot"
-    />
-  );
-  if (slug === 'superapp') return <SuperAppPhones />;
-  if (slug === 'workflow')  return <WorkflowVisual />;
-  if (slug === 'superapp')  return <SuperAppVisual />;
-  if (slug === 'framework') return <FrameworkVisual />;
-  if (slug === 'security')  return <SecurityHeroAnimation />;
+const SERVICES = [
+  { label: 'Eventstore',   Icon: DatabaseZap,  accent: true },
+  { label: 'Reporting',    Icon: BarChart3 },
+  { label: 'Document Mgmt',Icon: FileText },
+  { label: 'Notification', Icon: Bell },
+  { label: 'DevOps',       Icon: GitBranch },
+  { label: 'Test Auto.',   Icon: FlaskConical },
+  { label: 'AI Tooling',   Icon: Sparkles },
+  { label: 'Scheduler',    Icon: Calendar },
+];
 
-  // services
+function ServicesVisual() {
   return (
     <div className="viz" style={{ aspectRatio: '1/1' }}>
       <div className="viz-window" style={{ height: '100%' }}>
@@ -28,20 +35,37 @@ export default function ProductHeroVisual({ slug }) {
             plateau / services
           </div>
         </div>
-        <div style={{ padding: 24, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, height: 'calc(100% - 37px)' }}>
-          {['Eventstore', 'Reporting', 'DevOps', 'AI'].map((l, i) => (
+        <div style={{ padding: 16, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, height: 'calc(100% - 37px)' }}>
+          {SERVICES.map(({ label, Icon, accent }, i) => (
             <div key={i} style={{
-              background: i === 0 ? 'var(--navy)' : 'var(--bg-2)',
-              color: i === 0 ? 'white' : 'var(--text)',
-              borderRadius: 8, padding: 18,
-              display: 'flex', flexDirection: 'column', justifyContent: 'space-between',
+              background: accent ? 'var(--navy)' : 'var(--bg-2)',
+              color: accent ? 'white' : 'var(--text)',
+              borderRadius: 8,
+              padding: 16,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              gap: 8,
             }}>
-              <div className="mono" style={{ fontSize: 9, opacity: .6 }}>0{i + 1}</div>
-              <div style={{ fontWeight: 600, fontSize: 16, letterSpacing: '-0.01em' }}>{l}</div>
+              <Icon size={26} strokeWidth={1.5} color={accent ? 'rgba(255,255,255,0.7)' : 'var(--red)'} />
+              <div style={{ fontWeight: 600, fontSize: 13, letterSpacing: '-0.01em', lineHeight: 1.2 }}>{label}</div>
             </div>
           ))}
         </div>
       </div>
     </div>
   );
+}
+
+export default function ProductHeroVisual({ slug }) {
+  if (slug === 'studio') return (
+    <img src={studioImg} alt="Plateau Studio" className="studio-screenshot" />
+  );
+  if (slug === 'superapp')  return <SuperAppPhones />;
+  if (slug === 'workflow')  return <WorkflowVisual />;
+  if (slug === 'framework') return <FrameworkVisual />;
+  if (slug === 'security')  return <SecurityHeroAnimation />;
+  if (slug === 'services')  return <ServicesVisual />;
+
+  return null;
 }

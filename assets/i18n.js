@@ -25,9 +25,9 @@ window.PLATEAU_I18N = {
       lede: "Plateau, tasarımdan geliştirmeye, güvenlikten yayına kadar tüm yazılım yaşam döngüsünü tek bir AI-native platformda birleştiren uçtan uca bir yazılım geliştirme ailesidir.",
       cta_primary: "Demo Talep Et",
       cta_secondary: "Platformu Keşfet",
-      meta_1: "Kurumsal ölçek",
-      meta_2: "Java & .NET",
-      meta_3: "TR & EN"
+      meta_1: "Ölçeklenebilir",
+      meta_2: "Güvenli",
+      meta_3: "Üretken"
     },
     intro: {
       eyebrow: "PLATEAU PLATFORMU",
@@ -112,9 +112,9 @@ window.PLATEAU_I18N = {
       eyebrow: "MÜŞTERİLER NE DİYOR",
       title: "Kurumsal ekiplerden geri bildirimler.",
       items: [
-        { quote: "Plateau ile yeni bir dijital kanalı üretime almak artık aylar değil haftalar sürüyor. Ekipler aynı platformda konuşuyor.", author: "Dijital Dönüşüm Lideri", role: "Büyük ölçekli banka · örnek alıntı" },
-        { quote: "Güvenlik paketinin kritik işlemlerdeki koruması, regülasyon ekibimizin en çok güvendiği katmana dönüştü.", author: "CISO", role: "Sigorta şirketi · örnek alıntı" },
-        { quote: "Workflow editörü sayesinde iş birimleri süreçleri kendileri tasarlıyor. IT ekibi artık yalnızca onaylıyor.", author: "COO", role: "Perakende grubu · örnek alıntı" }
+        { quote: "Modülerlik, sadelik, bulut tabanlılık, kullanım kolaylığı, otomasyon, ölçeklenebilirlik, erişilebilirlik, uyarlanabilirlik, API uyumluluk olarak belirlediğimiz kılavuz ilkelerimizi önümüzde tutarak öz kaynaklarımızla geliştirdiğimiz Plateau mimari çerçevemiz üzerinde bu servislerimizi inşa ediyoruz.", author: "Sabri Gökmenler", role: "Genel Müdür Yardımcısı · Türkiye İş Bankası" },
+        { quote: "İşCep'in akıllı, yenilikçi ve kişisel olma vizyonu ile kullanıcıların sadece finansal ihtiyaçlarını karşılayan bir uygulama olmanın ötesinde, günlük yaşamlarını kolaylaştıracak lokomotif bir platform olarak konumlandırılması için Softtech ile çalışmalarımız tüm hızıyla devam ediyor.", author: "Sinem Turhan Özdek", role: "Birim Müdürü · Türkiye İş Bankası, Dijital Bankacılık" },
+        { quote: "Platformu, yazılım ve teknoloji şirketimiz Softtech ile finansal teknoloji alanındaki iştirakimiz Moka'nın katkılarıyla hayata geçirdiğimiz bir start-up olarak değerlendirebiliriz.", author: "Umut Feyzioğlu", role: "Genel Müdür · Proemtia" }
       ]
     },
     cta: {
@@ -224,9 +224,9 @@ window.PLATEAU_I18N = {
       lede: "Plateau is an end-to-end, AI-native software development platform family — unifying design, delivery, security, and operations in one coherent system.",
       cta_primary: "Request a Demo",
       cta_secondary: "Explore the platform",
-      meta_1: "Enterprise scale",
-      meta_2: "Java & .NET",
-      meta_3: "TR & EN"
+      meta_1: "Scalable",
+      meta_2: "Secure",
+      meta_3: "Productive"
     },
     intro: {
       eyebrow: "THE PLATEAU PLATFORM",
@@ -311,9 +311,9 @@ window.PLATEAU_I18N = {
       eyebrow: "WHAT CUSTOMERS SAY",
       title: "Feedback from enterprise teams.",
       items: [
-        { quote: "Shipping a new digital channel used to take months. With Plateau it takes weeks — every team speaks the same platform.", author: "Digital Transformation Lead", role: "Large bank · sample quote" },
-        { quote: "The security suite's protection in critical flows has become the layer our compliance team trusts most.", author: "CISO", role: "Insurance company · sample quote" },
-        { quote: "With the workflow editor, business teams design their own processes. IT only needs to approve.", author: "COO", role: "Retail group · sample quote" }
+        { quote: "We build these services on our Plateau architectural framework — developed entirely with our own resources — guided by the principles of modularity, simplicity, cloud-nativeness, ease of use, automation, scalability, accessibility, adaptability and API compatibility.", author: "Sabri Gökmenler", role: "Deputy General Manager · Türkiye İş Bankası" },
+        { quote: "We continue to work at full speed with Softtech to position İşCep — beyond just an app meeting financial needs — as a locomotive platform that simplifies users' daily lives, in line with İşCep's vision of being smart, innovative and personal.", author: "Sinem Turhan Özdek", role: "Unit Manager · Türkiye İş Bankası, Digital Banking" },
+        { quote: "We can consider the platform a start-up we brought to life with the contributions of Softtech, our software and technology company, and Moka, our fintech affiliate.", author: "Umut Feyzioğlu", role: "General Manager · Proemtia" }
       ]
     },
     cta: {
