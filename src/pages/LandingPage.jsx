@@ -7,6 +7,7 @@ import { useReveal } from '../hooks/useReveal';
 import { useCounter } from '../hooks/useCounter';
 import { DEMO_URL } from '../i18n';
 import studioImg from '../assets/studio-preview.png';
+import heroVideo from '../assets/plateau-hero.mp4';
 import SuperAppPhones from '../components/visuals/SuperAppPhones';
 import refIsbank      from '../assets/refs/isbank.svg';
 import refZiraat      from '../assets/refs/ziraat.gif';
@@ -103,13 +104,14 @@ function TweaksPanel({ v, update, open }) {
 function HeroGeometry() {
   return (
     <div className="hero-geo" aria-hidden>
-      <iframe
-        src="https://www.youtube.com/embed/aDyymQMdJYI?autoplay=1&mute=1&loop=1&playlist=aDyymQMdJYI&controls=0&rel=0&modestbranding=1&showinfo=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0"
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 0 }}
-        allow="autoplay; encrypted-media"
-        allowFullScreen
+      <video
+        src={heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
       />
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1 }} />
     </div>
   );
 }

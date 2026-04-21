@@ -1,7 +1,6 @@
 import studioImg from '../../assets/studio-preview.png';
+import heroVideo from '../../assets/plateau-hero.mp4';
 import SuperAppPhones from './SuperAppPhones';
-import WorkflowVisual from './WorkflowVisual';
-import FrameworkVisual from './FrameworkVisual';
 import SecurityHeroAnimation from './SecurityHeroAnimation';
 import {
   DatabaseZap,
@@ -15,7 +14,7 @@ import {
 } from 'lucide-react';
 
 const SERVICES = [
-  { label: 'Eventstore',   Icon: DatabaseZap,  accent: true },
+  { label: 'Eventstore',   Icon: DatabaseZap },
   { label: 'Reporting',    Icon: BarChart3 },
   { label: 'Document Mgmt',Icon: FileText },
   { label: 'Notification', Icon: Bell },
@@ -62,8 +61,11 @@ export default function ProductHeroVisual({ slug }) {
     <img src={studioImg} alt="Plateau Studio" className="studio-screenshot" />
   );
   if (slug === 'superapp')  return <SuperAppPhones />;
-  if (slug === 'workflow')  return <WorkflowVisual />;
-  if (slug === 'framework') return <FrameworkVisual />;
+  if (slug === 'workflow' || slug === 'framework') return (
+    <div style={{ position: 'relative', width: '100%', borderRadius: 'var(--radius)', overflow: 'hidden', aspectRatio: '16/9' }}>
+      <video src={heroVideo} autoPlay muted loop playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+    </div>
+  );
   if (slug === 'security')  return <SecurityHeroAnimation />;
   if (slug === 'services')  return <ServicesVisual />;
 

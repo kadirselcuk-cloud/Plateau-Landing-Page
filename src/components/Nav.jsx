@@ -75,10 +75,6 @@ export default function Nav({ lang, setLang, t }) {
 
         <Link to="/#numbers" onClick={close}>{t.nav.resources}</Link>
         <Link to="/#footer" onClick={close}>{t.nav.company}</Link>
-
-        <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary nav-mobile__cta" onClick={close}>
-          {t.nav.demo} <span className="arr">→</span>
-        </a>
       </div>
     </nav>
   );

@@ -4,7 +4,7 @@
 .hero { padding: clamp(40px, 8vw, 100px) 0 clamp(40px, 6vw, 80px); position: relative; overflow: hidden; }
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   gap: clamp(40px, 6vw, 80px);
   align-items: start;
 }
@@ -76,7 +76,7 @@
 
 @media (max-width: 960px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-right { display: none; }
+  .hero-right { display: block; }
 }
 
 /* Constellation variant */

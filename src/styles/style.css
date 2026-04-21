@@ -73,7 +73,7 @@ img { max-width: 100%; display: block; }
 .display {
   font-family: var(--sans);
   font-weight: 500;
-  font-size: clamp(52px, 8.5vw, 140px);
+  font-size: clamp(46px, 7vw, 112px);
   letter-spacing: -0.045em;
   line-height: 0.92;
   margin: 0;
