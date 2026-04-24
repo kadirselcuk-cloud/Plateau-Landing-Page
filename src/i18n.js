@@ -142,7 +142,7 @@ export const PLATEAU_I18N = {
         body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, no-code iş akışı editörü ve AI destekli araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlayan güçlü bir SaaS platformdur.",
         features: [
           { name: "Plateau UI Editör", body: "WYSIWYG editör, sürükle & bırak bileşen kütüphanesi, responsive tasarım, multi-resolution önizleme ve çoklu tema desteğiyle web ve mobil arayüzleri hızla oluşturun. Typescript dil desteği ve native bileşen desteği dahil." },
-          { name: "Workflow Editör", body: "BPMN bilgisi gerektirmeyen no-code sürükle & bırak iş akışı editörü. Flow tabanlı süreç modellemesi, rol ve havuz tasarımı, doküman yönetimi entegrasyonu ve HSA yönetimi." },
+          { name: "Workflow Editör", body: "BPMN bilgisi gerektirmeyen no-code sürükle & bırak iş akışı editörü. Flow tabanlı süreç modellemesi, rol ve havuz tasarımı, doküman yönetimi entegrasyonu ve HSA (Hizmet Seviyesi Anlaşması) yönetimi." },
           { name: "AI Özellikleri", body: "AI Chatbot ve Kod Asistanı ile geliştirme süreçlerinizi hızlandırın. Dokümantasyon Portalı, Studio Academy ve Video Portalı ile ekibinizi destekleyin." },
           { name: "Servis & Veri Entegrasyonu", body: "REST & SOAP servis entegrasyonu, mock data kullanımı, servis önbellekleme (cache) ve görsel veri tipi tasarım araçlarıyla ön yüzden servis bağlantısı." }
         ]
@@ -152,9 +152,9 @@ export const PLATEAU_I18N = {
         body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları no-code olarak hayata geçer.",
         features: [
           { name: "No-Code Sürükle & Bırak Editör", body: "BPMN bilgisi gerektirmeden iş akışları tasarlayın. Flow tabanlı süreç modellemesi ile karmaşık iş süreçlerini kolayca kurgulayın ve yönetin." },
-          { name: "Rol & Havuz Tasarımı", body: "Süreç tabanlı rol ve havuz tanımlamaları ile görev atamalarını yönetin. HSA (İnsan Servis Aktivitesi) yönetimi dahil." },
+          { name: "Rol & Havuz Tasarımı", body: "Süreç tabanlı rol ve havuz tanımlamaları ile görev atamalarını yönetin. HSA (Hizmet Seviyesi Anlaşması) yönetimi dahil." },
           { name: "Entegrasyon & Servisler", body: "REST & SOAP servis entegrasyonu ve doküman yönetimi sistemleriyle kesintisiz bağlantı. Servis önbellekleme ve mock data desteği." },
-          { name: "Ölçek & Güvenilirlik", body: "40M+/yıl iş akışı ve 150M+/aylık BFF işlemi kapasitesiyle kurumsal ölçekte kanıtlanmış performans ve güvenilirlik." }
+          { name: "Ölçek & Güvenilirlik", body: "40M+/yıl iş akışı kapasitesiyle kurumsal ölçekte kanıtlanmış performans ve güvenilirlik." }
         ]
       },
       superapp: {
@@ -182,7 +182,7 @@ export const PLATEAU_I18N = {
         body: "Plateau Framework; mikroservislerin belirli bir standart ve kalitede geliştirilmesine olanak sağlayan kurumsal frameworktür. Ölçeklenebilir ve dağıtık uygulama geliştirmeyi kolaylaştırır. 650+ geliştirici ve 1.350+ mikroservisyle kanıtlanmış.",
         features: [
           { name: "Java & .NET Desteği", body: "Java/Spring ve .NET ile mikroservis geliştirmeyi hızlandıran low-code araç setleri. Standardize hata yakalama, loglama ve önbellek yönetimi kutudan çıktığı gibi gelir." },
-          { name: "Ölçeklendirme & Dağıtım", body: "Artan yük ile yatay ve dikey ölçeklendirme. On-Prem ve Cloud ortamlarında sorunsuz dağıtım desteği. Millions+ işlem/gün kapasitesi." },
+          { name: "Ölçeklendirme & Dağıtım", body: "Artan yük ile yatay ve dikey ölçeklendirme. On-Prem ve Cloud ortamlarında sorunsuz dağıtım desteği. Milyonlarca işlem/gün kapasitesi." },
           { name: "AI & Low-Code Araçları", body: "Geliştirme süreçlerini hızlandıran AI destekli araçlar ve low-code geliştirme ortamı ile ekibinizin verimliliğini artırın." },
           { name: "Operasyonel Olgunluk", body: "Yerelleştirme yönetimi, uygulama metrikleri ve performans izleme altyapısı. Kapsamlı dokümantasyon ve kullanıcı kılavuzlarıyla kolay onboarding." }
         ]
@@ -295,7 +295,7 @@ export const PLATEAU_I18N = {
     },
     numbers: {
       eyebrow: "PLATEAU BY THE NUMBERS",
-      title: "Scale, trust, continuity.",
+      title: "Productive, Scalable and Secure.",
       stats: [
         { value: "15M+", label: "Customers secured", note: "Plateau Security" },
         { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
@@ -340,7 +340,7 @@ export const PLATEAU_I18N = {
         body: "Plateau Studio is a powerful SaaS AI & Low Code platform designed for modern software needs — combining a WYSIWYG editor, drag-and-drop components, no-code workflow builder and AI tools in one environment.",
         features: [
           { name: "Plateau UI Editor", body: "WYSIWYG editor with drag-and-drop component library, responsive design, multi-resolution preview, branding and multi-theme support. Typescript and native component support included." },
-          { name: "Workflow Editor", body: "No-code drag & drop workflow editor requiring no BPMN knowledge. Flow-based process modeling, role and pool design, document management integration and HSA management." },
+          { name: "Workflow Editor", body: "No-code drag & drop workflow editor requiring no BPMN knowledge. Flow-based process modeling, role and pool design, document management integration and SLA management." },
           { name: "AI Features", body: "AI Chatbot and Code Assistant to speed up development. Documentation Portal, Studio Academy and Video Portal to support your team at every stage." },
           { name: "Service & Data Integration", body: "REST & SOAP service integration with mock data support, service caching and visual data type design tools for seamless front-end connectivity." }
         ]
@@ -350,9 +350,9 @@ export const PLATEAU_I18N = {
         body: "Plateau Workflow closes the gap between business and IT with a visual process editor. Approval chains, conditional branching and system integrations ship without writing any code.",
         features: [
           { name: "No-Code Drag & Drop Editor", body: "Design workflows without BPMN expertise. Flow-based process modeling makes complex business processes easy to build, maintain and govern." },
-          { name: "Role & Pool Design", body: "Process-based role and pool definitions for task assignments and governance. Human Service Activity (HSA) management included." },
+          { name: "Role & Pool Design", body: "Process-based role and pool definitions for task assignments and governance. Service Level Agreement (SLA) management included." },
           { name: "Integration & Services", body: "REST & SOAP service integration and seamless connectivity with document management systems. Service caching and mock data support." },
-          { name: "Scale & Reliability", body: "Proven at enterprise scale — 40M+ workflows per year and 150M+ monthly BFF transactions with high availability." }
+          { name: "Scale & Reliability", body: "Proven at enterprise scale — 40M+ workflows per year with high availability and consistent performance." }
         ]
       },
       superapp: {

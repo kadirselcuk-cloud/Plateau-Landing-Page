@@ -294,7 +294,7 @@ window.PLATEAU_I18N = {
     },
     numbers: {
       eyebrow: "PLATEAU BY THE NUMBERS",
-      title: "Scale, trust, continuity.",
+      title: "Productive, Scalable and Secure.",
       stats: [
         { value: "120+", label: "Enterprise customers", note: "sample value" },
         { value: "40M+", label: "Active end users", note: "sample value" },
