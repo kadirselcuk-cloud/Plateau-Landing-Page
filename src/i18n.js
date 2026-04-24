@@ -67,7 +67,8 @@ export const PLATEAU_I18N = {
         tag: "04 · GÜVENLİK",
         name: "Plateau Security Suite",
         headline: "IAM, Edge Gateway, Heimdallr ve ZOKA ile çok katmanlı güvenlik.",
-        body: "Plateau Security; token bazlı yetkilendirme, modern API yönetimi, asimetrik kriptografi tabanlı MFA ve e-posta güvenlik farkındalığı ile kurumsal uygulamalarınızı her katmanda korur. 15M+ müşteri güvencesi.",
+        body: "Plateau Security; token bazlı yetkilendirme, modern API yönetimi, asimetrik kriptografi tabanlı MFA ve e-posta güvenlik farkındalığı ile kurumsal uygulamalarınızı her katmanda korur.",
+        body2: "OAuth 2.0 & OpenID Connect uyumlu altyapısıyla 15M+ müşteri, 400+ uygulama ve 25.000+ aktif kullanıcıya hizmet veren dört bileşen, tek bir güvenlik platformu altında birleşir.",
         subproducts: {
           edge: { name: "Plateau Edge", role: "API Gateway", body: "Token ve rol bazlı yetkilendirme, tek noktadan erişim, gelişmiş tehdit koruması. 400+ uygulama tarafından kullanılmaktadır." },
           iam: { name: "Plateau IAM", role: "Kimlik & Erişim", body: "OAuth 2.0 & OpenID Connect uyumlu kimlik yönetimi. SSO, MFA, özelleştirilebilir login akışları. 25.000+ aktif kullanıcı." },
@@ -79,7 +80,8 @@ export const PLATEAU_I18N = {
         tag: "05 · MİMARİ",
         name: "Plateau Framework",
         headline: "Mikroservisleri standart ve kalitede geliştiren kurumsal framework.",
-        body: "Plateau Framework; Java ve .NET desteğiyle mikroservislerin belirli bir standart ve kalitede geliştirilmesini sağlar. Low-code araç setleri, ölçeklendirme ve AI destekli geliştirme ortamı sunar. 650+ geliştirici, 1.350+ mikroservis.",
+        body: "Plateau Framework; Java ve .NET desteğiyle mikroservislerin belirli bir standart ve kalitede geliştirilmesini sağlar. Low-code araç setleri, ölçeklendirme ve AI destekli geliştirme ortamı sunar.",
+        body2: "650+ geliştirici ve 1.350+ mikroservisle kanıtlanmış; on-prem ve bulut ortamlarında sorunsuz dağıtım, yatay-dikey ölçeklendirme ve tam operasyonel olgunlukla kurumsal ölçekte çalışır.",
         bullets: ["Java/Spring & .NET desteği", "On-Prem & Cloud dağıtımı", "AI & Low-Code geliştirme araçları", "Standardize hata yakalama & loglama", "Yatay & dikey ölçeklendirme"]
       },
       services: {
@@ -99,6 +101,10 @@ export const PLATEAU_I18N = {
       eyebrow: "RAKAMLARLA PLATEAU",
       title: "Üretken, Ölçeklenebilir ve Güvenli.",
       stats: [
+        { value: "500+", label: "Uygulama", note: "Plateau Studio" },
+        { value: "500+", label: "Kullanıcı", note: "Plateau Studio" },
+        { value: "3K+", label: "Geliştirilen ekran", note: "Plateau Studio" },
+        { value: "30+", label: "Mini uygulama", note: "Plateau SuperApp" },
         { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
         { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
         { value: "150M+", label: "Aylık BFF işlemi", note: "Plateau Studio" },
@@ -149,7 +155,7 @@ export const PLATEAU_I18N = {
       },
       workflow: {
         hero: "BPMN bilgisi gerektirmeyen no-code iş akışı platformu.",
-        body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları no-code olarak hayata geçer.",
+        body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları no-code olarak hayata geçer. Rol ve havuz tasarımı ile HSA yönetimi, süreci uçtan uca kontrol altında tutar.",
         features: [
           { name: "No-Code Sürükle & Bırak Editör", body: "BPMN bilgisi gerektirmeden iş akışları tasarlayın. Flow tabanlı süreç modellemesi ile karmaşık iş süreçlerini kolayca kurgulayın ve yönetin." },
           { name: "Rol & Havuz Tasarımı", body: "Süreç tabanlı rol ve havuz tanımlamaları ile görev atamalarını yönetin. HSA (Hizmet Seviyesi Anlaşması) yönetimi dahil." },
@@ -170,8 +176,9 @@ export const PLATEAU_I18N = {
       security: {
         hero: "IAM, Edge Gateway, Heimdallr ve ZOKA ile uçtan uca güvenlik altyapısı.",
         body: "Plateau Security Suite; token bazlı yetkilendirme, modern API yönetimi, asimetrik kriptografi tabanlı MFA ve e-posta güvenlik farkındalığı olmak üzere dört bileşenden oluşan kapsamlı bir güvenlik platformudur.",
+        body2: "OAuth 2.0 & OpenID Connect uyumlu altyapısıyla 15M+ müşteri, 400+ uygulama ve 25.000+ aktif kullanıcıya hizmet veren dört bileşen, tek bir güvenlik platformu altında birleşir.",
         features: [
-          { name: "Plateau IAM", body: "OAuth 2.0 ve OpenID Connect standartlarına uygun kimlik ve erişim yönetimi. Özelleştirilebilir login akışları, SSO, merkezi çıkış, MFA, Redhat destekli altyapı ve brute force önlemleri. 25.000+ aktif kullanıcı." },
+          { name: "Plateau IAM", body: "OAuth 2.0 ve OpenID Connect standartlarına uygun kimlik ve erişim yönetimi. Özelleştirilebilir login akışları, SSO, merkezi çıkış, MFA, Redhat destekli altyapı ve brute force önlemleri. 15M+ güvence altındaki müşteri, 25.000+ aktif kullanıcı." },
           { name: "Plateau Edge API Gateway", body: "Token ve rol bazlı yetkilendirme, tek noktadan erişim hizmeti, gelişmiş tehdit koruması, istek validasyonu ve manipülasyonu, yüksek ölçeklendirilebilirlik ve düşük gecikme. 400+ uygulama tarafından kullanılmaktadır." },
           { name: "Heimdallr", body: "Asimetrik kriptografi yöntemleriyle ikinci faktör kimlik doğrulama. Dijital imza tabanlı kimlik doğrulama, yetkilendirilmiş cihaz garantisi, timestamp desteği. SDK, mobil ve intranet modülleri." },
           { name: "ZOKA", body: "Kurum içi siber güvenlik farkındalığı için phishing simülasyonu. Kampanya hazırlama, kullanıcı bazlı takip, mail açılma/tıklanma/bilgi girişi istatistikleri ve dashboard üzerinde detaylı raporlama." }
@@ -265,7 +272,8 @@ export const PLATEAU_I18N = {
         tag: "04 · SECURITY",
         name: "Plateau Security Suite",
         headline: "Layered defense with IAM, Edge Gateway, Heimdallr and ZOKA.",
-        body: "Plateau Security protects enterprise applications at every layer — token-based authorization, modern API management, asymmetric cryptography-based MFA and email security awareness. 15M+ customers secured.",
+        body: "Plateau Security protects enterprise applications at every layer — token-based authorization, modern API management, asymmetric cryptography-based MFA and email security awareness.",
+        body2: "Four components under one platform — OAuth 2.0 & OpenID Connect compliant, serving 15M+ customers, 400+ applications and 25,000+ active users with unified enterprise security management.",
         subproducts: {
           edge: { name: "Plateau Edge", role: "API Gateway", body: "Token and role-based authorization, single-point access, advanced threat protection and high-performance API management. Used by 400+ applications." },
           iam: { name: "Plateau IAM", role: "Identity & Access", body: "OAuth 2.0 & OpenID Connect compliant identity management. SSO, MFA, customizable login flows. 25,000+ active users." },
@@ -277,7 +285,8 @@ export const PLATEAU_I18N = {
         tag: "05 · ARCHITECTURE",
         name: "Plateau Framework",
         headline: "Build microservices to a consistent standard — Java & .NET.",
-        body: "Plateau Framework enables consistent, high-quality microservice development with low-code toolsets, scaling support and AI-assisted tooling. Proven at scale — 650+ developers, 1,350+ microservices.",
+        body: "Plateau Framework enables consistent, high-quality microservice development with low-code toolsets, scaling support and AI-assisted tooling.",
+        body2: "Proven at enterprise scale — 650+ developers and 1,350+ microservices across on-prem and cloud deployments, with horizontal and vertical scaling and full operational maturity.",
         bullets: ["Java/Spring & .NET support", "On-Prem & Cloud deployment", "AI & Low-Code dev tools", "Standardized error handling & logging", "Horizontal & vertical scaling"]
       },
       services: {
@@ -297,6 +306,10 @@ export const PLATEAU_I18N = {
       eyebrow: "PLATEAU BY THE NUMBERS",
       title: "Productive, Scalable and Secure.",
       stats: [
+        { value: "500+", label: "Applications", note: "Plateau Studio" },
+        { value: "500+", label: "Users", note: "Plateau Studio" },
+        { value: "3K+", label: "Screens developed", note: "Plateau Studio" },
+        { value: "30+", label: "Mini-apps", note: "Plateau SuperApp" },
         { value: "15M+", label: "Customers secured", note: "Plateau Security" },
         { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
         { value: "150M+", label: "Monthly BFF transactions", note: "Plateau Studio" },
@@ -347,7 +360,7 @@ export const PLATEAU_I18N = {
       },
       workflow: {
         hero: "The no-code workflow platform — no BPMN knowledge required.",
-        body: "Plateau Workflow closes the gap between business and IT with a visual process editor. Approval chains, conditional branching and system integrations ship without writing any code.",
+        body: "Plateau Workflow closes the gap between business and IT with a visual process editor. Approval chains, conditional branching and system integrations ship without writing any code. Role and pool design with SLA management keeps every process in full control end-to-end.",
         features: [
           { name: "No-Code Drag & Drop Editor", body: "Design workflows without BPMN expertise. Flow-based process modeling makes complex business processes easy to build, maintain and govern." },
           { name: "Role & Pool Design", body: "Process-based role and pool definitions for task assignments and governance. Service Level Agreement (SLA) management included." },
@@ -368,8 +381,9 @@ export const PLATEAU_I18N = {
       security: {
         hero: "IAM, Edge Gateway, Heimdallr and ZOKA — end-to-end security infrastructure.",
         body: "Plateau Security Suite consists of four components that protect enterprise applications at every layer: token-based authorization, modern API management, asymmetric cryptography-based MFA and email security awareness.",
+        body2: "Four components under one platform — OAuth 2.0 & OpenID Connect compliant, serving 15M+ customers, 400+ applications and 25,000+ active users with unified enterprise security management.",
         features: [
-          { name: "Plateau IAM", body: "OAuth 2.0 and OpenID Connect compliant identity and access management. Customizable login flows, SSO, centralized logout, MFA, Red Hat-backed infrastructure and brute force protection. 25,000+ active users." },
+          { name: "Plateau IAM", body: "OAuth 2.0 and OpenID Connect compliant identity and access management. Customizable login flows, SSO, centralized logout, MFA, Red Hat-backed infrastructure and brute force protection. 15M+ customers secured, 25,000+ active users." },
           { name: "Plateau Edge API Gateway", body: "Token and role-based authorization, single-point access, advanced threat protection, request validation and manipulation, high scalability and low latency. Used by 400+ applications." },
           { name: "Heimdallr", body: "Second-factor authentication via asymmetric cryptography. Digital signature-based verification, authorized device guarantee, timestamp support. SDK, mobile and intranet modules." },
           { name: "ZOKA", body: "Phishing simulation for enterprise cyber security awareness. Campaign creation, per-user tracking, open/click/data-entry statistics and detailed dashboard reporting." }

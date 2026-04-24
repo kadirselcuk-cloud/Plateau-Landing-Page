@@ -79,6 +79,7 @@ window.PLATEAU_I18N = {
         name: "Plateau Framework",
         headline: "Kurumsal mikroservisler için sağlam bir iskelet.",
         body: "Java ve .NET desteğiyle; izleme, iz sürme, loglama ve önbellekleme gibi fonksiyonel olmayan gereksinimleri kutudan çıktığı gibi sağlayan mikroservis çatısı.",
+        body2: "650+ geliştirici ve 1.350+ mikroservisle kanıtlanmış; on-prem ve bulut ortamlarında sorunsuz dağıtım, yatay-dikey ölçeklendirme ve tam operasyonel olgunlukla kurumsal ölçekte çalışır.",
         bullets: ["Monitoring", "Tracing", "Logging", "Caching", "Java & .NET"]
       },
       horizontal: {
@@ -97,10 +98,14 @@ window.PLATEAU_I18N = {
       eyebrow: "RAKAMLARLA PLATEAU",
       title: "Üretken, Ölçeklenebilir ve Güvenli.",
       stats: [
-        { value: "120+", label: "Kurumsal müşteri", note: "örnek değer" },
-        { value: "40M+", label: "Aktif son kullanıcı", note: "örnek değer" },
-        { value: "2.8B", label: "Aylık API çağrısı", note: "örnek değer" },
-        { value: "99.99%", label: "Uptime SLA", note: "hedef" }
+        { value: "500+", label: "Uygulama", note: "Plateau Studio" },
+        { value: "500+", label: "Kullanıcı", note: "Plateau Studio" },
+        { value: "3K+", label: "Geliştirilen ekran", note: "Plateau Studio" },
+        { value: "30+", label: "Mini uygulama", note: "Plateau SuperApp" },
+        { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
+        { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
+        { value: "150M+", label: "Aylık BFF işlemi", note: "Plateau Studio" },
+        { value: "40M+", label: "Yıllık iş akışı", note: "Plateau Workflow" }
       ]
     },
     refs: {
@@ -278,6 +283,7 @@ window.PLATEAU_I18N = {
         name: "Plateau Framework",
         headline: "A robust skeleton for enterprise microservices.",
         body: "A microservice framework supporting Java and .NET — with monitoring, tracing, logging and caching out of the box.",
+        body2: "Proven at enterprise scale — 650+ developers and 1,350+ microservices across on-prem and cloud deployments, with horizontal and vertical scaling and full operational maturity.",
         bullets: ["Monitoring", "Tracing", "Logging", "Caching", "Java & .NET"]
       },
       horizontal: {
@@ -296,10 +302,14 @@ window.PLATEAU_I18N = {
       eyebrow: "PLATEAU BY THE NUMBERS",
       title: "Productive, Scalable and Secure.",
       stats: [
-        { value: "120+", label: "Enterprise customers", note: "sample value" },
-        { value: "40M+", label: "Active end users", note: "sample value" },
-        { value: "2.8B", label: "Monthly API calls", note: "sample value" },
-        { value: "99.99%", label: "Uptime SLA", note: "target" }
+        { value: "500+", label: "Applications", note: "Plateau Studio" },
+        { value: "500+", label: "Users", note: "Plateau Studio" },
+        { value: "3K+", label: "Screens developed", note: "Plateau Studio" },
+        { value: "30+", label: "Mini-apps", note: "Plateau SuperApp" },
+        { value: "15M+", label: "Customers secured", note: "Plateau Security" },
+        { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
+        { value: "150M+", label: "Monthly BFF transactions", note: "Plateau Studio" },
+        { value: "40M+", label: "Workflows per year", note: "Plateau Workflow" }
       ]
     },
     refs: {

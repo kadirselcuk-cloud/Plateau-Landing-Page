@@ -141,7 +141,7 @@ function HeroEditorial({ t }) {
               <div><span className="dot"></span>{t.hero.meta_3}</div>
             </div>
           </div>
-          <div className="hero-right reveal" style={{ transitionDelay: '.3s' }}>
+          <div className="hero-right reveal" style={{ transitionDelay: '.3s', marginTop: 35 }}>
             <HeroGeometry />
           </div>
         </div>
@@ -274,15 +274,16 @@ function SecurityBlock({ t, learn }) {
   const icons = [Shield, KeyRound, Fingerprint, ShieldAlert];
   return (
     <div className="container" id="security">
-      <div className="product-row security-row">
+      <div className="product-row security-row" style={{ alignItems: 'start' }}>
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
           <h3 className="product-name">{d.name}</h3>
           <p className="product-headline">{d.headline}</p>
           <p className="product-body">{d.body}</p>
+          <p className="product-body" style={{ marginTop: 12 }}>{d.body2}</p>
           <Link to="/security" className="product-cta">{learn} <span>→</span></Link>
         </div>
-        <div className="security-grid reveal">
+        <div className="security-grid reveal" style={{ marginTop: 29 }}>
           {items.map((it, i) => {
             const Icon = icons[i];
             return (
@@ -309,7 +310,7 @@ function WorkflowBlock({ t, learn }) {
   const icons = [MousePointer2, Users, Zap, Server];
   return (
     <div className="container" id="workflow">
-      <div className="product-row security-row">
+      <div className="product-row security-row" style={{ alignItems: 'start' }}>
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
           <h3 className="product-name">{d.name}</h3>
@@ -317,7 +318,7 @@ function WorkflowBlock({ t, learn }) {
           <p className="product-body">{d.body}</p>
           <Link to="/workflow" className="product-cta">{learn} <span>→</span></Link>
         </div>
-        <div className="security-grid reveal">
+        <div className="security-grid reveal" style={{ marginTop: 29 }}>
           {features.map((f, i) => {
             const Icon = icons[i];
             return (
@@ -343,15 +344,16 @@ function FrameworkBlock({ t, learn }) {
   const icons = [Terminal, Network, Wand2, Gauge];
   return (
     <div className="container" id="framework">
-      <div className="product-row security-row">
+      <div className="product-row security-row" style={{ alignItems: 'start' }}>
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
           <h3 className="product-name">{d.name}</h3>
           <p className="product-headline">{d.headline}</p>
           <p className="product-body">{d.body}</p>
+          {d.body2 && <p className="product-body" style={{ marginTop: 12 }}>{d.body2}</p>}
           <Link to="/framework" className="product-cta">{learn} <span>→</span></Link>
         </div>
-        <div className="security-grid reveal">
+        <div className="security-grid reveal" style={{ marginTop: 29 }}>
           {features.map((f, i) => {
             const Icon = icons[i];
             return (
@@ -386,7 +388,7 @@ function HorizontalBlock({ t, learn }) {
   const d = t.products.services;
   return (
     <div className="container" id="services">
-      <div className="product-row horizontal-row">
+      <div className="product-row horizontal-row" style={{ alignItems: 'start' }}>
         <div className="product-copy reveal">
           <div className="product-tag">{d.tag}</div>
           <h3 className="product-name">{d.name}</h3>
@@ -394,7 +396,7 @@ function HorizontalBlock({ t, learn }) {
           <p className="product-body">{d.body}</p>
           <Link to="/services" className="product-cta">{learn} <span>→</span></Link>
         </div>
-        <div className="services-mini-grid reveal">
+        <div className="services-mini-grid reveal" style={{ marginTop: 29 }}>
           {SERVICES_MINI.map(({ label, Icon }) => (
             <div key={label} className="services-mini-card">
               <Icon size={22} strokeWidth={1.4} color="var(--red)" />

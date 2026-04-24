@@ -33,21 +33,22 @@ const PRODUCT_META = {
   services: { prev: { slug: 'framework',  to: '/framework'  }, next: { slug: 'studio',     to: '/studio'     } },
 };
 
-function ProductHero({ t, slug }) {
+function ProductHero({ t, slug, lang }) {
   const pd = t.pages[slug];
   const product = t.products[slug];
   return (
     <section className="p-hero">
       <div className="container">
         <Link to="/" className="p-back mono">← {t.nav.back}</Link>
-        <div className="p-hero-grid">
+        <div className="p-hero-grid" style={(slug === 'workflow' || slug === 'studio' || slug === 'security') ? { gridTemplateColumns: slug === 'workflow' ? '1fr 1.2fr' : '1.2fr 1fr', alignItems: 'start' } : {}}>
           <div>
             <div className="product-tag reveal">{product.tag}</div>
-            <h1 className="display reveal" style={{ fontSize: 'clamp(40px, 7vw, 96px)', transitionDelay: '.05s' }}>
+            <h1 className="display reveal" style={{ fontSize: slug === 'workflow' ? 'clamp(30px, 4.2vw, 62px)' : 'clamp(34px, 5vw, 72px)', transitionDelay: '.05s' }}>
               {product.name}
             </h1>
-            <p className="p-hero-headline reveal" style={{ transitionDelay: '.1s' }}>{pd.hero}</p>
-            <p className="lede reveal" style={{ marginTop: 20, transitionDelay: '.15s' }}>{pd.body}</p>
+            <p className="p-hero-headline reveal" style={{ fontSize: slug === 'workflow' ? 'clamp(16px, 1.7vw, 21px)' : undefined, transitionDelay: '.1s' }}>{pd.hero}</p>
+            <p className="lede reveal" style={{ marginTop: 20, fontSize: slug === 'workflow' ? '15px' : undefined, transitionDelay: '.15s' }}>{pd.body}</p>
+            {pd.body2 && <p className="lede reveal" style={{ marginTop: 12, transitionDelay: '.18s' }}>{pd.body2}</p>}
             <div className="hero-cta reveal" style={{ transitionDelay: '.2s' }}>
               <a href={DEMO_URL} target="_blank" rel="noopener" className="btn btn-primary">
                 {t.nav.demo} <span className="arr">→</span>
@@ -59,8 +60,8 @@ function ProductHero({ t, slug }) {
               )}
             </div>
           </div>
-          <div className="p-hero-visual reveal" style={{ transitionDelay: '.2s' }}>
-            <ProductHeroVisual slug={slug} />
+          <div className="p-hero-visual reveal" style={{ transitionDelay: '.2s', marginTop: (slug === 'studio' || slug === 'workflow' || slug === 'security') ? 29 : undefined }}>
+            <ProductHeroVisual slug={slug} lang={lang} />
           </div>
         </div>
       </div>
@@ -110,7 +111,7 @@ export default function ProductPage({ slug }) {
   return (
     <>
       <Nav lang={lang} setLang={setLang} t={t} />
-      <ProductHero t={t} slug={slug} />
+      <ProductHero t={t} slug={slug} lang={lang} />
       <Features t={t} slug={slug} />
       <Footer t={t} lang={lang} />
     </>
