@@ -10,7 +10,7 @@ import studioImg from '../assets/studio-preview.png';
 import heroVideo from '../assets/plateau-hero.mp4';
 import SuperAppPhones from '../components/visuals/SuperAppPhones';
 import refIsbank      from '../assets/refs/isbank.svg';
-import refZiraat      from '../assets/refs/ziraat.gif';
+import refIscep       from '../assets/refs/iscep.png';
 import refMaximum     from '../assets/refs/maximum.svg';
 import refIsfaktoring from '../assets/refs/isfaktoring.svg';
 import refFigopara    from '../assets/refs/figopara.svg';
@@ -502,7 +502,7 @@ function Numbers({ t }) {
 
 const REFS_LOGOS = [
   { name: 'Türkiye İş Bankası', img: refIsbank },
-  { name: 'Ziraat Bankası',     img: refZiraat },
+  { name: 'Pazarama',           img: refPazarama },
   { name: 'Maximum Mobil',      img: refMaximum },
   { name: 'İş Faktöring',       img: refIsfaktoring },
   { name: 'Figopara',           img: refFigopara },
@@ -510,9 +510,9 @@ const REFS_LOGOS = [
   { name: 'ProSevkiyat',        img: refProsevkiyat },
   { name: 'İş Yatırım',         img: refIsyatirim },
   { name: 'İş Portföy',         img: refIsportfoy },
-  { name: 'Pazarama',           img: refPazarama },
-  { name: 'NAYS',               img: refNays,        large: true },
   { name: 'İş Erişim',          img: refIserisim },
+  { name: 'İşCep',             img: refIscep,       large: true },
+  { name: 'NAYS',               img: refNays,        large: true },
 ];
 
 // ----- References -----
@@ -526,8 +526,8 @@ function References({ t }) {
         </div>
         <div className="refs-grid reveal" style={{ transitionDelay: '.1s' }}>
           {REFS_LOGOS.map((r) => (
-            <div key={r.name} className={`ref-slot ref-slot--logo${r.dark ? ' ref-slot--dark' : ''}`}>
-              <img src={r.img} alt={r.name} style={r.large ? { maxHeight: 60 } : undefined} />
+            <div key={r.name} className={`ref-slot ref-slot--logo${r.dark ? ' ref-slot--dark' : ''}`} style={r.large ? { paddingTop: 5, paddingBottom: 5 } : undefined}>
+              <img src={r.img} alt={r.name} style={r.large ? { maxHeight: 72 } : undefined} />
             </div>
           ))}
         </div>

@@ -46,15 +46,15 @@ export const PLATEAU_I18N = {
         tag: "01 · TASARIM & GELİŞTİRME",
         name: "Plateau Studio",
         headline: "Uygulama geliştirme hızınızı artıran SaaS AI & Low Code platformu.",
-        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, no-code iş akışı editörü ve AI araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlar. 300+ geliştirici ve 3.000+ ekranla kurumsal ölçekte kanıtlanmış.",
-        bullets: ["WYSIWYG editör & anında önizleme", "Sürükle & bırak bileşen kütüphanesi", "No-code iş akışı tasarımı (BPMN)", "AI Chatbot & Kod Asistanı", "REST & SOAP servis entegrasyonu"]
+        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, low-code iş akışı editörü ve AI araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlar. 500+ geliştirici ve 3.000+ ekranla kurumsal ölçekte kanıtlanmış.",
+        bullets: ["WYSIWYG editör & anında önizleme", "Sürükle & bırak bileşen kütüphanesi", "Low-code iş akışı tasarımı (BPMN)", "AI Chatbot & Kod Asistanı", "REST & SOAP servis entegrasyonu"]
       },
       workflow: {
         tag: "02 · OTOMASYON",
         name: "Plateau Workflow",
         headline: "BPMN bilgisi gerektirmeden iş akışları tasarlayın ve çalıştırın.",
-        body: "Plateau Workflow, no-code sürükle & bırak editörüyle karmaşık iş süreçlerini modellemenizi sağlar. Onay zincirleri, koşullu dallanmalar ve doküman yönetimi entegrasyonu ile iş birimleri IT'ye bağımlı kalmaz.",
-        bullets: ["No-code sürükle & bırak iş akışı editörü", "Flow tabanlı süreç ve rol tasarımı", "Doküman yönetimi entegrasyonu", "40M+/yıl iş akışı kapasitesi"]
+        body: "Plateau Workflow, low-code sürükle & bırak editörüyle karmaşık iş süreçlerini modellemenizi sağlar. Onay zincirleri, koşullu dallanmalar ve doküman yönetimi entegrasyonu ile iş birimleri IT'ye bağımlı kalmaz.",
+        bullets: ["Low-code sürükle & bırak iş akışı editörü", "Flow tabanlı süreç ve rol tasarımı", "Doküman yönetimi entegrasyonu", "40M+/yıl iş akışı kapasitesi"]
       },
       superapp: {
         tag: "03 · EKOSİSTEM",
@@ -145,19 +145,19 @@ export const PLATEAU_I18N = {
     pages: {
       studio: {
         hero: "Uygulama geliştirmeyi hızlandıran AI & Low Code SaaS platformu.",
-        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, no-code iş akışı editörü ve AI destekli araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlayan güçlü bir SaaS platformdur.",
+        body: "Plateau Studio; WYSIWYG editör, sürükle-bırak bileşen kütüphanesi, low-code iş akışı editörü ve AI destekli araçlarıyla web ve mobil uygulamalarınızı hızla geliştirmenizi sağlayan güçlü bir SaaS platformdur.",
         features: [
           { name: "Plateau UI Editör", body: "WYSIWYG editör, sürükle & bırak bileşen kütüphanesi, responsive tasarım, multi-resolution önizleme ve çoklu tema desteğiyle web ve mobil arayüzleri hızla oluşturun. Typescript dil desteği ve native bileşen desteği dahil." },
-          { name: "Workflow Editör", body: "BPMN bilgisi gerektirmeyen no-code sürükle & bırak iş akışı editörü. Flow tabanlı süreç modellemesi, rol ve havuz tasarımı, doküman yönetimi entegrasyonu ve HSA (Hizmet Seviyesi Anlaşması) yönetimi." },
+          { name: "Workflow Editör", body: "BPMN bilgisi gerektirmeyen low-code sürükle & bırak iş akışı editörü. Flow tabanlı süreç modellemesi, rol ve havuz tasarımı, doküman yönetimi entegrasyonu ve HSA (Hizmet Seviyesi Anlaşması) yönetimi." },
           { name: "AI Özellikleri", body: "AI Chatbot ve Kod Asistanı ile geliştirme süreçlerinizi hızlandırın. Dokümantasyon Portalı, Studio Academy ve Video Portalı ile ekibinizi destekleyin." },
           { name: "Servis & Veri Entegrasyonu", body: "REST & SOAP servis entegrasyonu, mock data kullanımı, servis önbellekleme (cache) ve görsel veri tipi tasarım araçlarıyla ön yüzden servis bağlantısı." }
         ]
       },
       workflow: {
-        hero: "BPMN bilgisi gerektirmeyen no-code iş akışı platformu.",
-        body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları no-code olarak hayata geçer. Rol ve havuz tasarımı ile HSA yönetimi, süreci uçtan uca kontrol altında tutar.",
+        hero: "BPMN bilgisi gerektirmeyen low-code iş akışı platformu.",
+        body: "Plateau Workflow; iş birimleri ve IT arasındaki boşluğu kapatan görsel süreç düzenleyicisidir. Onay zincirleri, koşullu dallanmalar ve sistem entegrasyonları low-code olarak hayata geçer. Rol ve havuz tasarımı ile HSA yönetimi, süreci uçtan uca kontrol altında tutar.",
         features: [
-          { name: "No-Code Sürükle & Bırak Editör", body: "BPMN bilgisi gerektirmeden iş akışları tasarlayın. Flow tabanlı süreç modellemesi ile karmaşık iş süreçlerini kolayca kurgulayın ve yönetin." },
+          { name: "Low-Code Sürükle & Bırak Editör", body: "BPMN bilgisi gerektirmeden iş akışları tasarlayın. Flow tabanlı süreç modellemesi ile karmaşık iş süreçlerini kolayca kurgulayın ve yönetin." },
           { name: "Rol & Havuz Tasarımı", body: "Süreç tabanlı rol ve havuz tanımlamaları ile görev atamalarını yönetin. HSA (Hizmet Seviyesi Anlaşması) yönetimi dahil." },
           { name: "Entegrasyon & Servisler", body: "REST & SOAP servis entegrasyonu ve doküman yönetimi sistemleriyle kesintisiz bağlantı. Servis önbellekleme ve mock data desteği." },
           { name: "Ölçek & Güvenilirlik", body: "40M+/yıl iş akışı kapasitesiyle kurumsal ölçekte kanıtlanmış performans ve güvenilirlik." }
@@ -251,15 +251,15 @@ export const PLATEAU_I18N = {
         tag: "01 · DESIGN & DEVELOPMENT",
         name: "Plateau Studio",
         headline: "The SaaS AI & Low Code platform that accelerates application development.",
-        body: "Plateau Studio combines a WYSIWYG editor, drag-and-drop component library, no-code workflow builder and AI tools to build web and mobile apps faster. 300+ developers, 3,000+ screens built.",
-        bullets: ["WYSIWYG editor & instant preview", "Drag & drop component library", "No-code workflow design (BPMN)", "AI Chatbot & Code Assistant", "REST & SOAP service integration"]
+        body: "Plateau Studio combines a WYSIWYG editor, drag-and-drop component library, low-code workflow builder and AI tools to build web and mobile apps faster. 500+ developers, 3,000+ screens built.",
+        bullets: ["WYSIWYG editor & instant preview", "Drag & drop component library", "Low-code workflow design (BPMN)", "AI Chatbot & Code Assistant", "REST & SOAP service integration"]
       },
       workflow: {
         tag: "02 · AUTOMATION",
         name: "Plateau Workflow",
         headline: "Design and run workflows without any BPMN knowledge.",
-        body: "Plateau Workflow's no-code drag-and-drop editor lets business teams model approval chains, conditional branching and document management integrations without writing code. 40M+ workflows run per year.",
-        bullets: ["No-code drag & drop workflow editor", "Flow-based process & role design", "Document management integration", "40M+ workflows per year"]
+        body: "Plateau Workflow's low-code drag-and-drop editor lets business teams model approval chains, conditional branching and document management integrations without writing code. 40M+ workflows run per year.",
+        bullets: ["Low-code drag & drop workflow editor", "Flow-based process & role design", "Document management integration", "40M+ workflows per year"]
       },
       superapp: {
         tag: "03 · ECOSYSTEM",
@@ -350,19 +350,19 @@ export const PLATEAU_I18N = {
     pages: {
       studio: {
         hero: "The AI & Low Code SaaS platform that accelerates application development.",
-        body: "Plateau Studio is a powerful SaaS AI & Low Code platform designed for modern software needs — combining a WYSIWYG editor, drag-and-drop components, no-code workflow builder and AI tools in one environment.",
+        body: "Plateau Studio is a powerful SaaS AI & Low Code platform designed for modern software needs — combining a WYSIWYG editor, drag-and-drop components, low-code workflow builder and AI tools in one environment.",
         features: [
           { name: "Plateau UI Editor", body: "WYSIWYG editor with drag-and-drop component library, responsive design, multi-resolution preview, branding and multi-theme support. Typescript and native component support included." },
-          { name: "Workflow Editor", body: "No-code drag & drop workflow editor requiring no BPMN knowledge. Flow-based process modeling, role and pool design, document management integration and SLA management." },
+          { name: "Workflow Editor", body: "Low-code drag & drop workflow editor requiring no BPMN knowledge. Flow-based process modeling, role and pool design, document management integration and SLA management." },
           { name: "AI Features", body: "AI Chatbot and Code Assistant to speed up development. Documentation Portal, Studio Academy and Video Portal to support your team at every stage." },
           { name: "Service & Data Integration", body: "REST & SOAP service integration with mock data support, service caching and visual data type design tools for seamless front-end connectivity." }
         ]
       },
       workflow: {
-        hero: "The no-code workflow platform — no BPMN knowledge required.",
+        hero: "The low-code workflow platform — no BPMN knowledge required.",
         body: "Plateau Workflow closes the gap between business and IT with a visual process editor. Approval chains, conditional branching and system integrations ship without writing any code. Role and pool design with SLA management keeps every process in full control end-to-end.",
         features: [
-          { name: "No-Code Drag & Drop Editor", body: "Design workflows without BPMN expertise. Flow-based process modeling makes complex business processes easy to build, maintain and govern." },
+          { name: "Low-Code Drag & Drop Editor", body: "Design workflows without BPMN expertise. Flow-based process modeling makes complex business processes easy to build, maintain and govern." },
           { name: "Role & Pool Design", body: "Process-based role and pool definitions for task assignments and governance. Service Level Agreement (SLA) management included." },
           { name: "Integration & Services", body: "REST & SOAP service integration and seamless connectivity with document management systems. Service caching and mock data support." },
           { name: "Scale & Reliability", body: "Proven at enterprise scale — 40M+ workflows per year with high availability and consistent performance." }
