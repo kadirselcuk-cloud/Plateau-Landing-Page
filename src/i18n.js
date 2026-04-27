@@ -102,13 +102,17 @@ export const PLATEAU_I18N = {
       title: "Üretken, Ölçeklenebilir ve Güvenli.",
       stats: [
         { value: "500+", label: "Uygulama", note: "Plateau Studio" },
-        { value: "500+", label: "Kullanıcı", note: "Plateau Studio" },
+        { value: "500+", label: "Geliştirici", note: "Plateau Studio" },
         { value: "3K+", label: "Geliştirilen ekran", note: "Plateau Studio" },
-        { value: "30+", label: "Mini uygulama", note: "Plateau SuperApp" },
-        { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
-        { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
         { value: "150M+", label: "Aylık BFF işlemi", note: "Plateau Studio" },
-        { value: "40M+", label: "Yıllık iş akışı", note: "Plateau Workflow" }
+        { value: "30+", label: "Mini uygulama", note: "Plateau SuperApp" },
+        { value: "40M+", label: "Yıllık iş akışı", note: "Plateau Workflow" },
+        { value: "15M+", label: "Güvence altındaki müşteri", note: "Plateau Security" },
+        { value: "20K+", label: "Güvence altındaki kullanıcı", note: "Plateau Security" },
+        { value: "1.35K+", label: "Aktif mikroservis", note: "Plateau Framework" },
+        { value: "350+", label: ".NET Mikroservisi", note: "Plateau Framework" },
+        { value: "950+", label: "Java Mikroservisi", note: "Plateau Framework" },
+        { value: "650+", label: "Geliştirici", note: "Plateau Framework" }
       ]
     },
     refs: {
@@ -186,7 +190,7 @@ export const PLATEAU_I18N = {
       },
       framework: {
         hero: "Java & .NET mikroservisleri standart ve kalitede geliştirin.",
-        body: "Plateau Framework; mikroservislerin belirli bir standart ve kalitede geliştirilmesine olanak sağlayan kurumsal frameworktür. Ölçeklenebilir ve dağıtık uygulama geliştirmeyi kolaylaştırır. 650+ geliştirici ve 1.350+ mikroservisyle kanıtlanmış.",
+        body: "Plateau Framework; mikroservislerin belirli bir standart ve kalitede geliştirilmesine olanak sağlayan kurumsal frameworktür. Ölçeklenebilir ve dağıtık uygulama geliştirmeyi kolaylaştırır. 650+ geliştirici ve 1.350+ mikroservisyle kanıtlanmış yazılım geliştirme altyapısı.",
         features: [
           { name: "Java & .NET Desteği", body: "Java/Spring ve .NET ile mikroservis geliştirmeyi hızlandıran low-code araç setleri. Standardize hata yakalama, loglama ve önbellek yönetimi kutudan çıktığı gibi gelir." },
           { name: "Ölçeklendirme & Dağıtım", body: "Artan yük ile yatay ve dikey ölçeklendirme. On-Prem ve Cloud ortamlarında sorunsuz dağıtım desteği. Milyonlarca işlem/gün kapasitesi." },
@@ -307,13 +311,17 @@ export const PLATEAU_I18N = {
       title: "Productive, Scalable and Secure.",
       stats: [
         { value: "500+", label: "Applications", note: "Plateau Studio" },
-        { value: "500+", label: "Users", note: "Plateau Studio" },
+        { value: "500+", label: "Developers", note: "Plateau Studio" },
         { value: "3K+", label: "Screens developed", note: "Plateau Studio" },
-        { value: "30+", label: "Mini-apps", note: "Plateau SuperApp" },
-        { value: "15M+", label: "Customers secured", note: "Plateau Security" },
-        { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
         { value: "150M+", label: "Monthly BFF transactions", note: "Plateau Studio" },
-        { value: "40M+", label: "Workflows per year", note: "Plateau Workflow" }
+        { value: "30+", label: "Mini-apps", note: "Plateau SuperApp" },
+        { value: "40M+", label: "Workflows per year", note: "Plateau Workflow" },
+        { value: "15M+", label: "Customers secured", note: "Plateau Security" },
+        { value: "20K+", label: "Users secured", note: "Plateau Security" },
+        { value: "1.35K+", label: "Active microservices", note: "Plateau Framework" },
+        { value: "350+", label: ".NET Microservices", note: "Plateau Framework" },
+        { value: "950+", label: "Java Microservices", note: "Plateau Framework" },
+        { value: "650+", label: "Developers", note: "Plateau Framework" }
       ]
     },
     refs: {

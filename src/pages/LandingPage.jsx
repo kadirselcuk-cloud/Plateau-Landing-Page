@@ -193,12 +193,12 @@ function HeroConstellation({ t }) {
 // ----- Intro / Platform -----
 function PlatformDiagram({ t }) {
   const layers = [
-    { name: 'Plateau Studio',           role: 'Design',              kind: 'design',     anchor: 'studio'    },
-    { name: 'Plateau Workflow',          role: 'Automation',          kind: 'design',     anchor: 'workflow'  },
-    { name: 'Plateau SuperApp',          role: 'Ecosystem',           kind: 'design',     anchor: 'superapp'  },
-    { name: 'Plateau Security Suite',    role: 'Defense · 4 modules', kind: 'security',   anchor: 'security'  },
-    { name: 'Plateau Framework',         role: 'Java · .NET',         kind: 'core',       anchor: 'framework' },
-    { name: t.intro.platform_horizontal, role: 'Docs · DevOps · Test', kind: 'horizontal', anchor: 'services'  },
+    { name: 'Plateau Studio',           role: 'UI DEVELOPMENT',      kind: 'design',     anchor: 'studio'    },
+    { name: 'Plateau Workflow',          role: 'AUTOMATION',          kind: 'design',     anchor: 'workflow'  },
+    { name: 'Plateau SuperApp',          role: 'ECOSYSTEM',           kind: 'design',     anchor: 'superapp'  },
+    { name: 'Plateau Security Suite',    role: 'SECURITY · 4 MODULES', kind: 'security',   anchor: 'security'  },
+    { name: 'Plateau Framework',         role: 'JAVA · .NET · MICROSERVICES', kind: 'core',       anchor: 'framework' },
+    { name: t.intro.platform_horizontal, role: 'DOCUMENT · NOTIFICATION',      kind: 'horizontal', anchor: 'services'  },
   ];
   return (
     <div className="platform-diagram reveal" style={{ transitionDelay: '.2s' }}>
@@ -381,7 +381,7 @@ const SERVICES_MINI = [
   { label: 'DevOps',           Icon: GitBranch     },
   { label: 'Test Otomasyonu',  Icon: FlaskConical  },
   { label: 'AI Araçları',      Icon: Sparkles      },
-  { label: 'Zamanlayıcı',      Icon: Calendar      },
+  { label: 'Scheduler',        Icon: Calendar      },
 ];
 
 function HorizontalBlock({ t, learn }) {
