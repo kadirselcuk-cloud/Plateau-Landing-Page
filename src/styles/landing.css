@@ -1,7 +1,7 @@
 /* Landing-specific styles */
 
 /* ---------- Hero ---------- */
-.hero { padding: clamp(40px, 8vw, 100px) 0 clamp(40px, 6vw, 80px); position: relative; overflow: hidden; }
+.hero { padding: clamp(20px, 3vw, 48px) 0 clamp(20px, 3vw, 40px); position: relative; overflow: hidden; }
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 1.1fr;
@@ -154,6 +154,7 @@
 
 /* ---------- Products ---------- */
 .section-alt { background: var(--bg-2); }
+#products { padding-top: 0; }
 .products-head { max-width: 900px; margin-bottom: 80px; }
 
 .product-row {
@@ -164,7 +165,7 @@
   padding: clamp(60px, 7vw, 100px) 0;
   border-top: 1px solid var(--line);
 }
-.section-alt > .container:first-child > .product-row { border-top: 0; padding-top: 0; }
+.section-alt > .container:first-child > .product-row { border-top: 0; }
 .section-alt > .container:last-child > .product-row { padding-bottom: 0; }
 .product-row.right { grid-template-columns: 1.1fr 1fr; direction: rtl; }
 .product-row.right > * { direction: ltr; }

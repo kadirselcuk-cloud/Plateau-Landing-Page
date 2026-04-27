@@ -18,17 +18,17 @@ export const PLATEAU_I18N = {
       back: "Ana Sayfaya Dön"
     },
     hero: {
-      eyebrow: "UÇTAN UCA · YAPAY ZEKA YERLİSİ",
+      eyebrow: "UÇTAN UCA · MODÜLER · YAPAY ZEKA YERLİSİ",
       title_a: "Plateau ile",
       title_b: "yükselin",
       title_c: "",
       tagline: "Be on the rise.",
-      lede: "Plateau; yapay zeka ve low-code odaklı, uçtan uca yeni nesil yazılım geliştirme platformudur. Tasarımdan geliştirmeye, güvenlikten yayına kadar tüm yazılım yaşam döngüsü tek bir AI-native platformda buluşur.",
+      lede: "Plateau; yapay zeka ve low-code odaklı, uçtan uca yeni nesil yazılım geliştirme platformudur. Tasarımdan geliştirmeye, güvenlikten yayına kadar tüm yazılım yaşam döngüsü tek bir AI-native platformda buluşur. Her ürün bağımsız kullanılabilir; bütünü ise uçtan uca bir platform sunar.",
       cta_primary: "Demo Talep Et",
       cta_secondary: "Platformu Keşfet",
-      meta_1: "Ölçeklenebilir",
-      meta_2: "Güvenli",
-      meta_3: "Üretken"
+      meta_1: "Üretken",
+      meta_2: "Ölçeklenebilir",
+      meta_3: "Güvenli"
     },
     intro: {
       eyebrow: "PLATEAU PLATFORM",
@@ -124,8 +124,8 @@ export const PLATEAU_I18N = {
       eyebrow: "MÜŞTERİLER NE DİYOR",
       title: "Kurumsal ekiplerden geri bildirimler.",
       items: [
-        { quote: "Modülerlik, sadelik, bulut tabanlılık, kullanım kolaylığı, otomasyon, ölçeklenebilirlik, erişilebilirlik, uyarlanabilirlik, API uyumluluk olarak belirlediğimiz kılavuz ilkelerimizi önümüzde tutarak öz kaynaklarımızla geliştirdiğimiz Plateau mimari çerçevemiz üzerinde bu servislerimizi inşa ediyoruz.", author: "Sabri Gökmenler", role: "Genel Müdür Yardımcısı · Türkiye İş Bankası" },
-        { quote: "İşCep'in akıllı, yenilikçi ve kişisel olma vizyonu ile kullanıcıların sadece finansal ihtiyaçlarını karşılayan bir uygulama olmanın ötesinde, günlük yaşamlarını kolaylaştıracak lokomotif bir platform olarak konumlandırılması için Softtech ile çalışmalarımız tüm hızıyla devam ediyor.", author: "Sinem Turhan Özdek", role: "Birim Müdürü · Türkiye İş Bankası, Dijital Bankacılık" },
+        { quote: "\"Yeni Nesil Teknoloji Mimari\"mizi \"Geleceğin Bankacılığı\" vizyonunu destekleyici sade, modüler, otonom, uyarlanabilir, API uyumlu bir temel bankacılık sistemi oluşturmak adına mikro-servisler üzerinde kurguladık. Bu doğrultuda iştirakimiz Softtech'in açık kaynak kodlu teknolojiler üzerinden geliştirdiği, bulut temelli, low-code geliştirme olanakları sunan yeni nesil yazılım geliştirme platformu Plateau'yu mimari çerçevemiz olarak belirledik.", author: "Sabri Gökmenler", role: "Genel Müdür Yardımcısı · Türkiye İş Bankası" },
+        { quote: "Tüm ihtiyaçlar belirlendikten sonra Plateau SuperApp, Plateau Studio ve Superapp Yönetim Portali olan Super Portal ile gereksinimler optimize edilerek ihtiyaçları karşılayacak geliştirmelerle güncellendi. Süreç boyunca hem İş Cep'e uygun yapıda entegrasyon yapılması hem de her yeni entegrasyonda sürecin daha da hızlı şekilde tamamlanabilmesi sağlandı.", author: "Sinem Turhan Özdek", role: "Birim Müdürü · Türkiye İş Bankası, Dijital Bankacılık" },
         { quote: "Platformu, yazılım ve teknoloji şirketimiz Softtech ile finansal teknoloji alanındaki iştirakimiz Moka'nın katkılarıyla hayata geçirdiğimiz bir start-up olarak değerlendirebiliriz.", author: "Umut Feyzioğlu", role: "Genel Müdür · Proemtia" }
       ]
     },
@@ -232,7 +232,7 @@ export const PLATEAU_I18N = {
       title_b: "Plateau",
       title_c: "",
       tagline: "Be on the rise.",
-      lede: "Plateau is a next-generation, end-to-end software development platform focused on AI and low-code — unifying design, delivery, security, and operations in one coherent system.",
+      lede: "Plateau is a next-generation, end-to-end software development platform focused on AI and low-code — unifying design, delivery, security, and operations in one coherent system. Each product stands on its own — together they form a complete end-to-end platform.",
       cta_primary: "Request a Demo",
       cta_secondary: "Explore the platform",
       meta_1: "Scalable",
@@ -334,7 +334,7 @@ export const PLATEAU_I18N = {
       title: "Feedback from enterprise teams.",
       items: [
         { quote: "We build these services on our Plateau architectural framework — developed entirely with our own resources — guided by the principles of modularity, simplicity, cloud-nativeness, ease of use, automation, scalability, accessibility, adaptability and API compatibility.", author: "Sabri Gökmenler", role: "Deputy General Manager · Türkiye İş Bankası" },
-        { quote: "We continue to work at full speed with Softtech to position İşCep — beyond just an app meeting financial needs — as a locomotive platform that simplifies users' daily lives, in line with İşCep's vision of being smart, innovative and personal.", author: "Sinem Turhan Özdek", role: "Unit Manager · Türkiye İş Bankası, Digital Banking" },
+        { quote: "Once all requirements were identified, Plateau SuperApp, Plateau Studio and Super Portal — the SuperApp Management Portal — were updated with optimised developments to meet those needs. Throughout the process, we ensured integrations were structured to fit İş Cep's architecture and that each new integration could be completed progressively faster.", author: "Sinem Turhan Özdek", role: "Unit Manager · Türkiye İş Bankası, Digital Banking" },
         { quote: "We can consider the platform a start-up we brought to life with the contributions of Softtech, our software and technology company, and Moka, our fintech affiliate.", author: "Umut Feyzioğlu", role: "General Manager · Proemtia" }
       ]
     },

@@ -197,7 +197,7 @@ function PlatformDiagram({ t }) {
     { name: 'Plateau Workflow',          role: 'AUTOMATION',          kind: 'design',     anchor: 'workflow'  },
     { name: 'Plateau SuperApp',          role: 'ECOSYSTEM',           kind: 'design',     anchor: 'superapp'  },
     { name: 'Plateau Security Suite',    role: 'SECURITY · 4 MODULES', kind: 'security',   anchor: 'security'  },
-    { name: 'Plateau Framework',         role: 'JAVA · .NET · MICROSERVICES', kind: 'core',       anchor: 'framework' },
+    { name: 'Plateau Framework',         role: 'MICROSERVICES · NFRs',        kind: 'core',       anchor: 'framework' },
     { name: t.intro.platform_horizontal, role: 'DOCUMENT · NOTIFICATION',      kind: 'horizontal', anchor: 'services'  },
   ];
   return (
@@ -219,27 +219,6 @@ function PlatformDiagram({ t }) {
   );
 }
 
-function Intro({ t }) {
-  return (
-    <section className="section" id="platform">
-      <div className="container">
-        <div className="intro-grid">
-          <div>
-            <div className="eyebrow reveal">{t.intro.eyebrow}</div>
-            <h2 className="section-title reveal" style={{ marginTop: 16, transitionDelay: '.05s' }}>{t.intro.title}</h2>
-          </div>
-          <div>
-            <p className="lede reveal" style={{ transitionDelay: '.1s' }}>{t.intro.body}</p>
-            <div className="pills reveal" style={{ transitionDelay: '.15s' }}>
-              {t.intro.pills.map((p, i) => <span key={i} className="pill">{p}</span>)}
-            </div>
-          </div>
-        </div>
-        <PlatformDiagram t={t} />
-      </div>
-    </section>
-  );
-}
 
 // ----- Products (Vertical storytelling) -----
 const STUDIO_URL = 'https://studio.onplateau.com/';
@@ -577,7 +556,11 @@ export default function LandingPage() {
     <>
       <Nav lang={lang} setLang={setLang} t={t} />
       {v.heroVariant === 'constellation' ? <HeroConstellation t={t} /> : <HeroEditorial t={t} />}
-      <Intro t={t} />
+      <section className="section" id="platform">
+        <div className="container">
+          <PlatformDiagram t={t} />
+        </div>
+      </section>
       {v.productsLayout === 'grid' ? <ProductsGrid t={t} /> : <ProductsVertical t={t} />}
       <Numbers t={t} />
       <References t={t} />
