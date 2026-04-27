@@ -40,7 +40,7 @@ function ProductHero({ t, slug, lang }) {
     <section className="p-hero">
       <div className="container">
         <Link to="/" className="p-back mono">← {t.nav.back}</Link>
-        <div className="p-hero-grid" style={(slug === 'workflow' || slug === 'studio' || slug === 'security') ? { gridTemplateColumns: slug === 'workflow' ? '1fr 1.2fr' : '1.2fr 1fr', alignItems: 'start' } : {}}>
+        <div className={`p-hero-grid${slug === 'workflow' ? ' p-hero-grid--workflow' : (slug === 'studio' || slug === 'security') ? ' p-hero-grid--start' : ''}`}>
           <div>
             <div className="product-tag reveal">{product.tag}</div>
             <h1 className="display reveal" style={{ fontSize: slug === 'workflow' ? 'clamp(30px, 4.2vw, 62px)' : 'clamp(34px, 5vw, 72px)', transitionDelay: '.05s' }}>
